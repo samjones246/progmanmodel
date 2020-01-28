@@ -2,10 +2,10 @@
 <org.eventb.core.scMachineFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
 <org.eventb.core.scSeesContext name="'" org.eventb.core.scTarget="/progmanmodel/c0_users.bcc" org.eventb.core.source="/progmanmodel/m0_users.bum|org.eventb.core.machineFile#m0_users|org.eventb.core.seesContext#_8ZZ44EHDEeqKzaOTi1o2gg"/>
 <org.eventb.core.scInternalContext name="c0_users">
-<org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="works_at∈USER → UNIVERSITY" org.eventb.core.source="/progmanmodel/c0_users.buc|org.eventb.core.contextFile#c0_users|org.eventb.core.axiom#_DKVaIEHEEeqKzaOTi1o2gg" org.eventb.core.theorem="false"/>
-<org.eventb.core.scCarrierSet name="UNIVERSITY" org.eventb.core.source="/progmanmodel/c0_users.buc|org.eventb.core.contextFile#c0_users|org.eventb.core.carrierSet#_DKUMAEHEEeqKzaOTi1o2gg" org.eventb.core.type="ℙ(UNIVERSITY)"/>
-<org.eventb.core.scCarrierSet name="USER" org.eventb.core.source="/progmanmodel/c0_users.buc|org.eventb.core.contextFile#c0_users|org.eventb.core.carrierSet#_66vigEHDEeqKzaOTi1o2gg" org.eventb.core.type="ℙ(USER)"/>
-<org.eventb.core.scConstant name="works_at" org.eventb.core.source="/progmanmodel/c0_users.buc|org.eventb.core.contextFile#c0_users|org.eventb.core.constant#_DKUzEEHEEeqKzaOTi1o2gg" org.eventb.core.type="ℙ(USER×UNIVERSITY)"/>
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="works_at∈USER → UNIVERSITY" org.eventb.core.source="/progmanmodel/c0_users.buc|org.eventb.core.contextFile#c0_users|org.eventb.core.axiom#_swGD4UHSEeqHCPZ-G665YQ" org.eventb.core.theorem="false"/>
+<org.eventb.core.scCarrierSet name="UNIVERSITY" org.eventb.core.source="/progmanmodel/c0_users.buc|org.eventb.core.contextFile#c0_users|org.eventb.core.carrierSet#_swFc0UHSEeqHCPZ-G665YQ" org.eventb.core.type="ℙ(UNIVERSITY)"/>
+<org.eventb.core.scCarrierSet name="USER" org.eventb.core.source="/progmanmodel/c0_users.buc|org.eventb.core.contextFile#c0_users|org.eventb.core.carrierSet#_swFc0EHSEeqHCPZ-G665YQ" org.eventb.core.type="ℙ(USER)"/>
+<org.eventb.core.scConstant name="works_at" org.eventb.core.source="/progmanmodel/c0_users.buc|org.eventb.core.contextFile#c0_users|org.eventb.core.constant#_swGD4EHSEeqHCPZ-G665YQ" org.eventb.core.type="ℙ(USER×UNIVERSITY)"/>
 </org.eventb.core.scInternalContext>
 <org.eventb.core.scInvariant name="c0_usert" org.eventb.core.label="inv1" org.eventb.core.predicate="registered⊆USER" org.eventb.core.source="/progmanmodel/m0_users.bum|org.eventb.core.machineFile#m0_users|org.eventb.core.invariant#_QUDCYEHEEeqKzaOTi1o2gg" org.eventb.core.theorem="false"/>
 <org.eventb.core.scInvariant name="c0_useru" org.eventb.core.label="inv2" org.eventb.core.predicate="logged_in⊆registered" org.eventb.core.source="/progmanmodel/m0_users.bum|org.eventb.core.machineFile#m0_users|org.eventb.core.invariant#_QUDpcEHEEeqKzaOTi1o2gg" org.eventb.core.theorem="false"/>

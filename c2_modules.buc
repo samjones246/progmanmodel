@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1580217550939" org.eventb.texttools.text_representation="context c2_modules extends c1_programmes&#10;sets MODULE&#10;end&#10;" version="3">
-<org.eventb.core.extendsContext name="'" org.eventb.core.target="c1_programmes"/>
-<org.eventb.core.carrierSet name="_Y6hMIEHIEeqHd7PiYTbxHg" org.eventb.core.generated="false" org.eventb.core.identifier="MODULE"/>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" version="3">
+<org.eventb.core.extendsContext name="_fuhrAEHSEeqHCPZ-G665YQ" org.eventb.core.target="c1_programmes"/>
+<org.eventb.core.carrierSet name="_fuiSEEHSEeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.identifier="MODULE"/>
 </org.eventb.core.contextFile>
