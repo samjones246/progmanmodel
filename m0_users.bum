@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1580216220556" org.eventb.texttools.text_representation="machine m0_users sees c0_users&#10;variables registered logged_in&#10;invariants&#10;&#9;@inv1 registered ⊆ USER&#10;&#9;@inv2 logged_in ⊆  registered&#10;events&#10;  event INITIALISATION&#10;  then&#10;  &#9;@act1 registered ≔  ∅&#10;  &#9;@act2 logged_in ≔ ∅&#10;  end&#10;  event register&#10;  any u&#10;  where&#10;  &#9;@grd1 u ∈ USER&#10;  &#9;@grd2 u ∉  registered&#10;  then&#10;  &#9;@act1 registered ≔ registered ∪ {u}&#10;  end&#10;  event unregister&#10;  any u&#10;  where&#10;  &#9;@grd1 u ∈  registered&#10;  &#9;@grd2 u ∉  logged_in&#10;  then&#10;  &#9;@act1 registered ≔ registered ∖ {u}&#10;  end&#10;  event login&#10;  any u&#10;  where&#10;  &#9;@grd1 u ∈ registered&#10;  &#9;@grd2 u ∉  logged_in&#10;  then&#10;  &#9;@act1 logged_in ≔ logged_in ∪ {u}&#10;  end&#10;  event logout&#10;  any u&#10;  where&#10;  &#9;@grd1 u ∈ registered&#10;  &#9;@grd2 u ∈  logged_in&#10;  then&#10;  &#9;@act1 logged_in ≔ logged_in ∖ {u}&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.seesContext name="_8ZZ44EHDEeqKzaOTi1o2gg" org.eventb.core.target="c0_users"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_TSDroEHEEeqKzaOTi1o2gg" org.eventb.core.assignment="registered ≔  ∅" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="_TSESsEHEEeqKzaOTi1o2gg" org.eventb.core.assignment="logged_in ≔ ∅" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_GnKGUEHEEeqKzaOTi1o2gg" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="register">
+<org.eventb.core.parameter name="_eQiLYEHEEeqKzaOTi1o2gg" org.eventb.core.generated="false" org.eventb.core.identifier="u"/>
+<org.eventb.core.guard name="_eQiLYUHEEeqKzaOTi1o2gg" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="u ∈ USER"/>
+<org.eventb.core.guard name="_eQiycEHEEeqKzaOTi1o2gg" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="u ∉  registered"/>
+<org.eventb.core.action name="_eQiycUHEEeqKzaOTi1o2gg" org.eventb.core.assignment="registered ≔ registered ∪ {u}" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_GnKtYEHEEeqKzaOTi1o2gg" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="unregister">
+<org.eventb.core.parameter name="_eQjZgEHEEeqKzaOTi1o2gg" org.eventb.core.generated="false" org.eventb.core.identifier="u"/>
+<org.eventb.core.guard name="_eQjZgUHEEeqKzaOTi1o2gg" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="u ∈  registered"/>
+<org.eventb.core.guard name="_eQkAkEHEEeqKzaOTi1o2gg" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="u ∉  logged_in"/>
+<org.eventb.core.action name="_eQknoEHEEeqKzaOTi1o2gg" org.eventb.core.assignment="registered ≔ registered ∖ {u}" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_GnL7gEHEEeqKzaOTi1o2gg" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="login">
+<org.eventb.core.parameter name="_iqZHkEHEEeqKzaOTi1o2gg" org.eventb.core.generated="false" org.eventb.core.identifier="u"/>
+<org.eventb.core.guard name="_iqZHkUHEEeqKzaOTi1o2gg" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="u ∈ registered"/>
+<org.eventb.core.guard name="_iqZuoEHEEeqKzaOTi1o2gg" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="u ∉  logged_in"/>
+<org.eventb.core.action name="_iqZuoUHEEeqKzaOTi1o2gg" org.eventb.core.assignment="logged_in ≔ logged_in ∪ {u}" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_GnMikEHEEeqKzaOTi1o2gg" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="logout">
+<org.eventb.core.parameter name="_iqaVsEHEEeqKzaOTi1o2gg" org.eventb.core.generated="false" org.eventb.core.identifier="u"/>
+<org.eventb.core.guard name="_iqaVsUHEEeqKzaOTi1o2gg" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="u ∈ registered"/>
+<org.eventb.core.guard name="_iqaVskHEEeqKzaOTi1o2gg" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="u ∈  logged_in"/>
+<org.eventb.core.action name="_iqa8wEHEEeqKzaOTi1o2gg" org.eventb.core.assignment="logged_in ≔ logged_in ∖ {u}" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_MTIxsEHEEeqKzaOTi1o2gg" org.eventb.core.generated="false" org.eventb.core.identifier="registered"/>
+<org.eventb.core.variable name="_MTJYwEHEEeqKzaOTi1o2gg" org.eventb.core.generated="false" org.eventb.core.identifier="logged_in"/>
+<org.eventb.core.invariant name="_QUDCYEHEEeqKzaOTi1o2gg" org.eventb.core.generated="false" org.eventb.core.label="inv1" org.eventb.core.predicate="registered ⊆ USER"/>
+<org.eventb.core.invariant name="_QUDpcEHEEeqKzaOTi1o2gg" org.eventb.core.generated="false" org.eventb.core.label="inv2" org.eventb.core.predicate="logged_in ⊆  registered"/>
+</org.eventb.core.machineFile>
