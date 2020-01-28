@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="10">
+<org.eventb.core.poFile org.eventb.core.poStamp="11">
 <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="10">
 <org.eventb.core.poIdentifier name="UNIVERSITY" org.eventb.core.type="ℙ(UNIVERSITY)"/>
 <org.eventb.core.poIdentifier name="USER" org.eventb.core.type="ℙ(USER)"/>
@@ -145,9 +145,9 @@
 <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="works_at(u)=works_at(module_leader(m))" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.event#_Sq06QUHJEeqHd7PiYTbxHg|org.eventb.core.guard#_8qbBUkHMEeqHd7PiYTbxHg"/>
 <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="m∉contains_module[{p}]" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.event#_Sq06QUHJEeqHd7PiYTbxHg|org.eventb.core.guard#_8qboYEHMEeqHd7PiYTbxHg"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="unassign_module/inv22/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="10">
+<org.eventb.core.poSequent name="unassign_module/inv22/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="11">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m2_modules.bpo|org.eventb.core.poFile#m2_modules|org.eventb.core.poPredicateSet#EVTALLHYPprogramme_leadew"/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="contains_module∪{p ↦ m}∈programmes ↔ modules" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.invariant#_FmSs8EHJEeqHd7PiYTbxHg"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="contains_module ∖ {p ↦ m}∈programmes ↔ modules" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.invariant#_FmSs8EHJEeqHd7PiYTbxHg"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.event#_Sq06QkHJEeqHd7PiYTbxHg"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.invariant#_FmSs8EHJEeqHd7PiYTbxHg"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/progmanmodel/m2_modules.bpo|org.eventb.core.poFile#m2_modules|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/progmanmodel/m2_modules.bpo|org.eventb.core.poFile#m2_modules|org.eventb.core.poSequent#unassign_module\/inv22\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>

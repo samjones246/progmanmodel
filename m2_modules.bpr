@@ -642,6 +642,7 @@
 <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(USER)"/>
 <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
 <org.eventb.core.prIdent name="works_at" org.eventb.core.type="ℙ(USER×UNIVERSITY)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="contains_module ∖ {p ↦ m}∈programmes ↔ modules"/>
 <org.eventb.core.prPred name="p12" org.eventb.core.predicate="registered⊆USER"/>
 <org.eventb.core.prPred name="p9" org.eventb.core.predicate="contains_module∈programmes ↔ modules"/>
 <org.eventb.core.prPred name="p13" org.eventb.core.predicate="programmes⊆PROGRAMME"/>
@@ -653,7 +654,6 @@
 <org.eventb.core.prPred name="p5" org.eventb.core.predicate="module_leader∈modules → registered"/>
 <org.eventb.core.prPred name="p6" org.eventb.core.predicate="p∈programmes"/>
 <org.eventb.core.prPred name="p7" org.eventb.core.predicate="u∈administrators[{p}]"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="contains_module∪{p ↦ m}∈programmes ↔ modules"/>
 <org.eventb.core.prPred name="p8" org.eventb.core.predicate="m∈modules"/>
 <org.eventb.core.prPred name="p10" org.eventb.core.predicate="administrators∈programmes ↔ registered"/>
 <org.eventb.core.prPred name="p14" org.eventb.core.predicate="modules⊆MODULE"/>
