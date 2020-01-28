@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1580222156688" org.eventb.texttools.text_representation="context c3_outcomes extends c2_modules&#10;sets M_OUTCOME P_OUTCOME&#10;end&#10;" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="c2_modules"/>
+<org.eventb.core.carrierSet name="_HOa80EHTEeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.identifier="M_OUTCOME"/>
+<org.eventb.core.carrierSet name="_HObj4EHTEeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.identifier="P_OUTCOME"/>
+</org.eventb.core.contextFile>
