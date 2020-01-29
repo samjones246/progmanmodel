@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="10">
+<org.eventb.core.poFile org.eventb.core.poStamp="11">
 <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="UNIVERSITY" org.eventb.core.type="ℙ(UNIVERSITY)"/>
 <org.eventb.core.poIdentifier name="USER" org.eventb.core.type="ℙ(USER)"/>
@@ -83,7 +83,7 @@
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m4_prerequisites.bum|org.eventb.core.machineFile#m4_prerequisites|org.eventb.core.event#_D-LeYEJzEeqHCPZ-G665YQ|org.eventb.core.guard#_4vY1QkJzEeqHCPZ-G665YQ"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/progmanmodel/m4_prerequisites.bpo|org.eventb.core.poFile#m4_prerequisites|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/progmanmodel/m4_prerequisites.bpo|org.eventb.core.poFile#m4_prerequisites|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomeu*"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="assign_prerequisite/inv41/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="9">
+<org.eventb.core.poSequent name="assign_prerequisite/inv41/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="11">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m4_prerequisites.bpo|org.eventb.core.poFile#m4_prerequisites|org.eventb.core.poPredicateSet#EVTALLHYPprogramme_outcomeu"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="prerequisites∪{m1 ↦ m2}∈modules ↔ modules" org.eventb.core.source="/progmanmodel/m4_prerequisites.bum|org.eventb.core.machineFile#m4_prerequisites|org.eventb.core.invariant#_80wkoUJyEeqHCPZ-G665YQ"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m4_prerequisites.bum|org.eventb.core.machineFile#m4_prerequisites|org.eventb.core.event#_D-LeYEJzEeqHCPZ-G665YQ"/>
@@ -91,7 +91,7 @@
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/progmanmodel/m4_prerequisites.bpo|org.eventb.core.poFile#m4_prerequisites|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/progmanmodel/m4_prerequisites.bpo|org.eventb.core.poFile#m4_prerequisites|org.eventb.core.poSequent#assign_prerequisite\/inv41\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/progmanmodel/m4_prerequisites.bpo|org.eventb.core.poFile#m4_prerequisites|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="assign_prerequisite/inv42/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="9">
+<org.eventb.core.poSequent name="assign_prerequisite/inv42/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="11">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m4_prerequisites.bpo|org.eventb.core.poFile#m4_prerequisites|org.eventb.core.poPredicateSet#EVTALLHYPprogramme_outcomeu"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀m3⦂MODULE,m4⦂MODULE·m3∈modules∧m4∈modules∧m3≠m4∧m4∈(prerequisites∪{m1 ↦ m2})[{m3}]⇒contains_module∼[{m3}]⊆contains_module∼[{m4}]" org.eventb.core.source="/progmanmodel/m4_prerequisites.bum|org.eventb.core.machineFile#m4_prerequisites|org.eventb.core.invariant#_lUfGUEJ0EeqHCPZ-G665YQ"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m4_prerequisites.bum|org.eventb.core.machineFile#m4_prerequisites|org.eventb.core.event#_D-LeYEJzEeqHCPZ-G665YQ"/>
@@ -113,10 +113,11 @@
 <org.eventb.core.poPredicateSet name="EVTHYPprogramme_outcomeu*" org.eventb.core.parentSet="/progmanmodel/m4_prerequisites.bpo|org.eventb.core.poFile#m4_prerequisites|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomeu)" org.eventb.core.poStamp="9">
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="u=module_leader(m1)" org.eventb.core.source="/progmanmodel/m4_prerequisites.bum|org.eventb.core.machineFile#m4_prerequisites|org.eventb.core.event#_D-LeYEJzEeqHCPZ-G665YQ|org.eventb.core.guard#_4vY1QUJzEeqHCPZ-G665YQ"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_outcomeu" org.eventb.core.parentSet="/progmanmodel/m4_prerequisites.bpo|org.eventb.core.poFile#m4_prerequisites|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomeu*" org.eventb.core.poStamp="9">
+<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_outcomeu" org.eventb.core.parentSet="/progmanmodel/m4_prerequisites.bpo|org.eventb.core.poFile#m4_prerequisites|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomeu*" org.eventb.core.poStamp="11">
 <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="works_at(u)=works_at(module_leader(m2))" org.eventb.core.source="/progmanmodel/m4_prerequisites.bum|org.eventb.core.machineFile#m4_prerequisites|org.eventb.core.event#_D-LeYEJzEeqHCPZ-G665YQ|org.eventb.core.guard#_4vY1QkJzEeqHCPZ-G665YQ"/>
 <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="contains_module∼[{m1}]⊆contains_module∼[{m2}]" org.eventb.core.source="/progmanmodel/m4_prerequisites.bum|org.eventb.core.machineFile#m4_prerequisites|org.eventb.core.event#_D-LeYEJzEeqHCPZ-G665YQ|org.eventb.core.guard#_4vZcUEJzEeqHCPZ-G665YQ"/>
 <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="m2∉prerequisites[{m1}]" org.eventb.core.source="/progmanmodel/m4_prerequisites.bum|org.eventb.core.machineFile#m4_prerequisites|org.eventb.core.event#_D-LeYEJzEeqHCPZ-G665YQ|org.eventb.core.guard#_MckKgEJ0EeqHCPZ-G665YQ"/>
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="m1≠m2" org.eventb.core.source="/progmanmodel/m4_prerequisites.bum|org.eventb.core.machineFile#m4_prerequisites|org.eventb.core.event#_D-LeYEJzEeqHCPZ-G665YQ|org.eventb.core.guard#_Tmo70EKFEeqP-97FScFUgw"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poSequent name="unassign_prerequisite/grd44/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="9">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m4_prerequisites.bpo|org.eventb.core.poFile#m4_prerequisites|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomev)"/>
