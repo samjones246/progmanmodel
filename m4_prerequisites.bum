@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1580290854330" org.eventb.texttools.text_representation="machine m4_prerequisites refines m3_outcomes  sees c3_outcomes&#10;&#10;variables registered logged_in programmes programme_leader administrators modules contains_module module_leader module_outcomes programme_outcomes outcome_mapping mapped prerequisites&#10;invariants&#10;&#9;@inv41 prerequisites ∈ modules ↔ modules&#10;events&#10;  event INITIALISATION extends INITIALISATION&#10;  then&#10;  &#9;@act41 prerequisites ≔ ∅&#10;  end&#10;&#10;  event assign_prerequisite&#10;  end&#10;&#10;  event unassign_prerequisite&#10;  end&#10;&#10;  event assign_programme_outcome extends assign_programme_outcome&#10;  end&#10;&#10;  event unassign_programme_outcome extends unassign_programme_outcome&#10;  end&#10;&#10;  event assign_module_outcome extends assign_module_outcome&#10;  end&#10;&#10;  event unassign_module_outcome extends unassign_module_outcome&#10;  end&#10;&#10;  event map_outcome extends map_outcome&#10;  end&#10;&#10;  event unmap_outcome extends unmap_outcome&#10;  end&#10;&#10;  event create_module extends create_module&#10;  end&#10;&#10;  event delete_module extends delete_module&#10;  end&#10;&#10;  event assign_module extends assign_module&#10;  end&#10;&#10;  event unassign_module extends unassign_module&#10;  end&#10;&#10;  event transfer_module_ownership extends transfer_module_ownership&#10;  end&#10;&#10;  event create_programme extends create_programme&#10;  end&#10;&#10;  event delete_programme extends delete_programme&#10;  end&#10;&#10;  event add_administrator extends add_administrator&#10;  end&#10;&#10;  event remove_administrator extends remove_administrator&#10;  end&#10;&#10;  event transfer_ownership extends transfer_ownership&#10;  end&#10;&#10;  event register extends register&#10;  end&#10;&#10;  event unregister extends unregister&#10;  end&#10;&#10;  event login extends login&#10;  end&#10;&#10;  event logout extends logout&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="m3_outcomes"/>
+<org.eventb.core.seesContext name="_ksZoUEHUEeqHCPZ-G665YQ" org.eventb.core.target="c3_outcomes"/>
+<org.eventb.core.variable name="_MTIxsEHEEeqKzaOTi1o2gg" org.eventb.core.generated="false" org.eventb.core.identifier="registered"/>
+<org.eventb.core.variable name="_MTJYwEHEEeqKzaOTi1o2gg" org.eventb.core.generated="false" org.eventb.core.identifier="logged_in"/>
+<org.eventb.core.variable name="_iY418EHGEeqHd7PiYTbxHg" org.eventb.core.generated="false" org.eventb.core.identifier="programmes"/>
+<org.eventb.core.variable name="_vN_gIEHGEeqHd7PiYTbxHg" org.eventb.core.generated="false" org.eventb.core.identifier="programme_leader"/>
+<org.eventb.core.variable name="_vN_gIUHGEeqHd7PiYTbxHg" org.eventb.core.generated="false" org.eventb.core.identifier="administrators"/>
+<org.eventb.core.variable name="_AGHB4EHJEeqHd7PiYTbxHg" org.eventb.core.generated="false" org.eventb.core.identifier="modules"/>
+<org.eventb.core.variable name="_AGHB4UHJEeqHd7PiYTbxHg" org.eventb.core.generated="false" org.eventb.core.identifier="contains_module"/>
+<org.eventb.core.variable name="_AGHo8EHJEeqHd7PiYTbxHg" org.eventb.core.generated="false" org.eventb.core.identifier="module_leader"/>
+<org.eventb.core.variable name="_ksiLMEHUEeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.identifier="module_outcomes"/>
+<org.eventb.core.variable name="_ksiLMUHUEeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.identifier="programme_outcomes"/>
+<org.eventb.core.variable name="_ksiLMkHUEeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.identifier="outcome_mapping"/>
+<org.eventb.core.variable name="_sTsH0EHqEeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.identifier="mapped"/>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHh" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="__qLSkEJyEeqHCPZ-G665YQ" org.eventb.core.assignment="prerequisites ≔ ∅" org.eventb.core.generated="false" org.eventb.core.label="act41"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_D-LeYEJzEeqHCPZ-G665YQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="assign_prerequisite"/>
+<org.eventb.core.event name="_D-MFcEJzEeqHCPZ-G665YQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="unassign_prerequisite"/>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHi" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="assign_programme_outcome">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="assign_programme_outcome"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHj" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="unassign_programme_outcome">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="unassign_programme_outcome"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHk" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="assign_module_outcome">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="assign_module_outcome"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHl" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="unassign_module_outcome">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="unassign_module_outcome"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHm" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="map_outcome">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="map_outcome"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHn" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="unmap_outcome">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="unmap_outcome"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHo" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="create_module">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="create_module"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHp" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="delete_module">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="delete_module"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHq" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="assign_module">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="assign_module"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHr" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="unassign_module">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="unassign_module"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHs" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="transfer_module_ownership">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="transfer_module_ownership"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHt" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="create_programme">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="create_programme"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHu" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="delete_programme">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="delete_programme"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHv" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="add_administrator">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="add_administrator"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHw" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="remove_administrator">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="remove_administrator"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHx" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="transfer_ownership">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="transfer_ownership"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHy" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="register">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="register"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHz" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="unregister">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="unregister"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxH{" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="login">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="login"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxH|" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="logout">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="logout"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_80wkoEJyEeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.identifier="prerequisites"/>
+<org.eventb.core.invariant name="_80wkoUJyEeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.label="inv41" org.eventb.core.predicate="prerequisites ∈ modules ↔ modules"/>
+</org.eventb.core.machineFile>
