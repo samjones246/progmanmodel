@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1580298513867" org.eventb.texttools.text_representation="machine m5_semesters refines m4_prerequisites  sees c3_outcomes&#10;&#10;variables registered logged_in programmes programme_leader administrators modules contains_module module_leader module_outcomes programme_outcomes outcome_mapping mapped prerequisites programme_duration programme_semesters&#10;invariants&#10;&#9;@inv51 programme_duration ∈ programmes → ℕ1&#10;&#9;@inv52 programme_semesters ∈ programmes → (modules ⇸ ℕ1)&#10;&#9;@inv53 ∀p · p ∈ programmes ⇒  dom(programme_semesters(p)) = contains_module[{p}]&#10;&#10;events&#10;  event INITIALISATION extends INITIALISATION&#10;  then&#10;  &#9;@act51 programme_duration ≔ ∅&#10;  &#9;@act52 programme_semesters ≔ ∅&#10;  end&#10;&#10;  event assign_prerequisite extends assign_prerequisite&#10;  end&#10;&#10;  event unassign_prerequisite extends unassign_prerequisite&#10;  end&#10;&#10;  event assign_programme_outcome extends assign_programme_outcome&#10;  end&#10;&#10;  event unassign_programme_outcome extends unassign_programme_outcome&#10;  end&#10;&#10;  event assign_module_outcome extends assign_module_outcome&#10;  end&#10;&#10;  event unassign_module_outcome extends unassign_module_outcome&#10;  end&#10;&#10;  event map_outcome extends map_outcome&#10;  end&#10;&#10;  event unmap_outcome extends unmap_outcome&#10;  end&#10;&#10;  event create_module extends create_module&#10;  end&#10;&#10;  event delete_module extends delete_module&#10;  where&#10;  &#9;@grd51 ∀ p · p ∈ programmes ⇒ m ∉ dom(programme_semesters(p))&#10;  end&#10;&#10;  event assign_module extends assign_module&#10;  any s&#10;  where&#10;  &#9;@grd51 s ∈ ℕ1&#10;  &#9;@grd52 s ≤ programme_duration(p) ∗ 2&#10;  then&#10;  &#9;@act51 programme_semesters(p) ≔ programme_semesters(p) ∪  {m↦s}&#10;  end&#10;&#10;  event unassign_module extends unassign_module&#10;  then&#10;  &#9;@act51 programme_semesters(p) ≔ {m} ⩤ programme_semesters(p)&#10;  end&#10;&#10;  event transfer_module_ownership extends transfer_module_ownership&#10;  end&#10;&#10;  event create_programme extends create_programme&#10;  any d&#10;  where&#10;  &#9;@grd51 d ∈ ℕ1&#10;  then&#10;  &#9;@act51 programme_semesters ≔  programme_semesters ∪  {p↦∅}&#10;  &#9;@act52 programme_duration(p) ≔ d&#10;  end&#10;&#10;  event delete_programme extends delete_programme&#10;  then&#10;  &#9;@act51 programme_semesters ≔  {p} ⩤ programme_semesters&#10;  &#9;@act52 programme_duration ≔  {p} ⩤ programme_duration&#10;  end&#10;&#10;  event add_administrator extends add_administrator&#10;  end&#10;&#10;  event remove_administrator extends remove_administrator&#10;  end&#10;&#10;  event transfer_ownership extends transfer_ownership&#10;  end&#10;&#10;  event register extends register&#10;  end&#10;&#10;  event unregister extends unregister&#10;  end&#10;&#10;  event login extends login&#10;  end&#10;&#10;  event logout extends logout&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="m4_prerequisites"/>
+<org.eventb.core.seesContext name="_ksZoUEHUEeqHCPZ-G665YQ" org.eventb.core.target="c3_outcomes"/>
+<org.eventb.core.variable name="_MTIxsEHEEeqKzaOTi1o2gg" org.eventb.core.generated="false" org.eventb.core.identifier="registered"/>
+<org.eventb.core.variable name="_MTJYwEHEEeqKzaOTi1o2gg" org.eventb.core.generated="false" org.eventb.core.identifier="logged_in"/>
+<org.eventb.core.variable name="_iY418EHGEeqHd7PiYTbxHg" org.eventb.core.generated="false" org.eventb.core.identifier="programmes"/>
+<org.eventb.core.variable name="_vN_gIEHGEeqHd7PiYTbxHg" org.eventb.core.generated="false" org.eventb.core.identifier="programme_leader"/>
+<org.eventb.core.variable name="_vN_gIUHGEeqHd7PiYTbxHg" org.eventb.core.generated="false" org.eventb.core.identifier="administrators"/>
+<org.eventb.core.variable name="_AGHB4EHJEeqHd7PiYTbxHg" org.eventb.core.generated="false" org.eventb.core.identifier="modules"/>
+<org.eventb.core.variable name="_AGHB4UHJEeqHd7PiYTbxHg" org.eventb.core.generated="false" org.eventb.core.identifier="contains_module"/>
+<org.eventb.core.variable name="_AGHo8EHJEeqHd7PiYTbxHg" org.eventb.core.generated="false" org.eventb.core.identifier="module_leader"/>
+<org.eventb.core.variable name="_ksiLMEHUEeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.identifier="module_outcomes"/>
+<org.eventb.core.variable name="_ksiLMUHUEeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.identifier="programme_outcomes"/>
+<org.eventb.core.variable name="_ksiLMkHUEeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.identifier="outcome_mapping"/>
+<org.eventb.core.variable name="_sTsH0EHqEeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.identifier="mapped"/>
+<org.eventb.core.variable name="_80wkoEJyEeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.identifier="prerequisites"/>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHh" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_hDIXIEJ6EeqHCPZ-G665YQ" org.eventb.core.assignment="programme_duration ≔ ∅" org.eventb.core.generated="false" org.eventb.core.label="act51"/>
+<org.eventb.core.action name="_hDI-MEJ6EeqHCPZ-G665YQ" org.eventb.core.assignment="programme_semesters ≔ ∅" org.eventb.core.generated="false" org.eventb.core.label="act52"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHi" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="assign_prerequisite">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="assign_prerequisite"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHj" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="unassign_prerequisite">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="unassign_prerequisite"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHk" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="assign_programme_outcome">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="assign_programme_outcome"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHl" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="unassign_programme_outcome">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="unassign_programme_outcome"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHm" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="assign_module_outcome">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="assign_module_outcome"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHn" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="unassign_module_outcome">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="unassign_module_outcome"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHo" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="map_outcome">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="map_outcome"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHp" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="unmap_outcome">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="unmap_outcome"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHq" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="create_module">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="create_module"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHr" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="delete_module">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="delete_module"/>
+<org.eventb.core.guard name="_uRmuIUJ7EeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.label="grd51" org.eventb.core.predicate="∀ p · p ∈ programmes ⇒ m ∉ dom(programme_semesters(p))"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHs" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="assign_module">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="assign_module"/>
+<org.eventb.core.parameter name="_0CHCQEJ9EeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.identifier="s"/>
+<org.eventb.core.guard name="_0CJegEJ9EeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.label="grd51" org.eventb.core.predicate="s ∈ ℕ1"/>
+<org.eventb.core.guard name="_0CHpUEJ9EeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.label="grd52" org.eventb.core.predicate="s ≤ programme_duration(p) ∗ 2"/>
+<org.eventb.core.action name="_KjRpcEJ7EeqHCPZ-G665YQ" org.eventb.core.assignment="programme_semesters(p) ≔ programme_semesters(p) ∪  {m↦s}" org.eventb.core.generated="false" org.eventb.core.label="act51"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHt" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="unassign_module">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="unassign_module"/>
+<org.eventb.core.action name="_lTkcIEJ7EeqHCPZ-G665YQ" org.eventb.core.assignment="programme_semesters(p) ≔ {m} ⩤ programme_semesters(p)" org.eventb.core.generated="false" org.eventb.core.label="act51"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHu" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="transfer_module_ownership">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="transfer_module_ownership"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHv" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="create_programme">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="create_programme"/>
+<org.eventb.core.parameter name="_uRmuIEJ7EeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.identifier="d"/>
+<org.eventb.core.action name="_0CJegUJ9EeqHCPZ-G665YQ" org.eventb.core.assignment="programme_semesters ≔  programme_semesters ∪  {p↦∅}" org.eventb.core.generated="false" org.eventb.core.label="act51"/>
+<org.eventb.core.action name="_yvIpYEJ7EeqHCPZ-G665YQ" org.eventb.core.assignment="programme_duration(p) ≔ d" org.eventb.core.generated="false" org.eventb.core.label="act52"/>
+<org.eventb.core.guard name="_f49egEKEEeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.label="grd51" org.eventb.core.predicate="d ∈ ℕ1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHw" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="delete_programme">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="delete_programme"/>
+<org.eventb.core.action name="_ZJrx0EJ-EeqHCPZ-G665YQ" org.eventb.core.assignment="programme_semesters ≔  {p} ⩤ programme_semesters" org.eventb.core.generated="false" org.eventb.core.label="act51"/>
+<org.eventb.core.action name="_fFqS8EJ8EeqHCPZ-G665YQ" org.eventb.core.assignment="programme_duration ≔  {p} ⩤ programme_duration" org.eventb.core.generated="false" org.eventb.core.label="act52"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHx" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="add_administrator">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="add_administrator"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHy" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="remove_administrator">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="remove_administrator"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxHz" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="transfer_ownership">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="transfer_ownership"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxH{" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="register">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="register"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxH|" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="unregister">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="unregister"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxH}" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="login">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="login"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_vN_gIUHGEeqHd7PiYTbxH~" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="logout">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="logout"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_cOgxkEJ6EeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.identifier="programme_duration"/>
+<org.eventb.core.variable name="_cOgxkUJ6EeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.identifier="programme_semesters"/>
+<org.eventb.core.invariant name="_cOgxkkJ6EeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.label="inv51" org.eventb.core.predicate="programme_duration ∈ programmes → ℕ1"/>
+<org.eventb.core.invariant name="_cOgxk0J6EeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.label="inv52" org.eventb.core.predicate="programme_semesters ∈ programmes → (modules ⇸ ℕ1)"/>
+<org.eventb.core.invariant name="_J2fxEEJ9EeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.label="inv53" org.eventb.core.predicate="∀p · p ∈ programmes ⇒  dom(programme_semesters(p)) = contains_module[{p}]"/>
+</org.eventb.core.machineFile>
