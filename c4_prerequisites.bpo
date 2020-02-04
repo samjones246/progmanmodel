@@ -7,5 +7,5 @@
 <org.eventb.core.poIdentifier name="M_OUTCOME" org.eventb.core.type="ℙ(M_OUTCOME)"/>
 <org.eventb.core.poIdentifier name="P_OUTCOME" org.eventb.core.type="ℙ(P_OUTCOME)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/progmanmodel/c3_outcomes.bpo|org.eventb.core.poFile#c3_outcomes|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/progmanmodel/c4_prerequisites.bpo|org.eventb.core.poFile#c4_prerequisites|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0"/>
 </org.eventb.core.poFile>
