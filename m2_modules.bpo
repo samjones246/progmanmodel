@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="4">
+<org.eventb.core.poFile org.eventb.core.poStamp="5">
 <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="USER" org.eventb.core.type="ℙ(USER)"/>
 <org.eventb.core.poIdentifier name="PROGRAMME" org.eventb.core.type="ℙ(PROGRAMME)"/>
@@ -148,7 +148,7 @@
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="module_leader(m)=u" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.event#_Sq06QEHJEeqHd7PiYTbxHg|org.eventb.core.guard#_uxWYsUHMEeqHd7PiYTbxHg"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="m∉ran(contains_module)" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.event#_Sq06QEHJEeqHd7PiYTbxHg|org.eventb.core.guard#_xMTiwUHNEeqHd7PiYTbxHg"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="assign_module/inv22/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+<org.eventb.core.poSequent name="assign_module/inv22/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="5">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m2_modules.bpo|org.eventb.core.poFile#m2_modules|org.eventb.core.poPredicateSet#EVTALLHYPprogramme_leadev"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="contains_module∪{p ↦ m}∈programmes ↔ modules" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.invariant#_FmSs8EHJEeqHd7PiYTbxHg"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.event#_Sq06QUHJEeqHd7PiYTbxHg"/>
@@ -162,14 +162,15 @@
 <org.eventb.core.poIdentifier name="contains_module'" org.eventb.core.type="ℙ(PROGRAMME×MODULE)"/>
 <org.eventb.core.poIdentifier name="m" org.eventb.core.type="MODULE"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_leadev" org.eventb.core.parentSet="/progmanmodel/m2_modules.bpo|org.eventb.core.poFile#m2_modules|org.eventb.core.poPredicateSet#EVTIDENTprogramme_leadev" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_leadev" org.eventb.core.parentSet="/progmanmodel/m2_modules.bpo|org.eventb.core.poFile#m2_modules|org.eventb.core.poPredicateSet#EVTIDENTprogramme_leadev" org.eventb.core.poStamp="5">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u∈logged_in" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.event#_Sq06QUHJEeqHd7PiYTbxHg|org.eventb.core.guard#_8qaaQEHMEeqHd7PiYTbxHg"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="m∈modules" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.event#_Sq06QUHJEeqHd7PiYTbxHg|org.eventb.core.guard#_8qaaQUHMEeqHd7PiYTbxHg"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="p∈programmes" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.event#_Sq06QUHJEeqHd7PiYTbxHg|org.eventb.core.guard#_8qbBUEHMEeqHd7PiYTbxHg"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="u∈administrators[{p}]" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.event#_Sq06QUHJEeqHd7PiYTbxHg|org.eventb.core.guard#_xMVX8UHNEeqHd7PiYTbxHg"/>
 <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="m∉contains_module[{p}]" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.event#_Sq06QUHJEeqHd7PiYTbxHg|org.eventb.core.guard#_8qboYEHMEeqHd7PiYTbxHg"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="p∉published" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.event#_Sq06QUHJEeqHd7PiYTbxHg|org.eventb.core.guard#_K8nhAEgiEeqeqbGZOOBkaQ"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="unassign_module/inv22/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+<org.eventb.core.poSequent name="unassign_module/inv22/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="5">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m2_modules.bpo|org.eventb.core.poFile#m2_modules|org.eventb.core.poPredicateSet#EVTALLHYPprogramme_leadew"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="contains_module ∖ {p ↦ m}∈programmes ↔ modules" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.invariant#_FmSs8EHJEeqHd7PiYTbxHg"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.event#_Sq06QkHJEeqHd7PiYTbxHg"/>
@@ -183,12 +184,13 @@
 <org.eventb.core.poIdentifier name="contains_module'" org.eventb.core.type="ℙ(PROGRAMME×MODULE)"/>
 <org.eventb.core.poIdentifier name="m" org.eventb.core.type="MODULE"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_leadew" org.eventb.core.parentSet="/progmanmodel/m2_modules.bpo|org.eventb.core.poFile#m2_modules|org.eventb.core.poPredicateSet#EVTIDENTprogramme_leadew" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_leadew" org.eventb.core.parentSet="/progmanmodel/m2_modules.bpo|org.eventb.core.poFile#m2_modules|org.eventb.core.poPredicateSet#EVTIDENTprogramme_leadew" org.eventb.core.poStamp="5">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u∈logged_in" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.event#_Sq06QkHJEeqHd7PiYTbxHg|org.eventb.core.guard#_xMS7sEHNEeqHd7PiYTbxHg"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="m∈modules" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.event#_Sq06QkHJEeqHd7PiYTbxHg|org.eventb.core.guard#_xMS7sUHNEeqHd7PiYTbxHg"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="p∈programmes" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.event#_Sq06QkHJEeqHd7PiYTbxHg|org.eventb.core.guard#_xMTiwEHNEeqHd7PiYTbxHg"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="u∈administrators[{p}]" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.event#_Sq06QkHJEeqHd7PiYTbxHg|org.eventb.core.guard#_rcwJgEHOEeqHd7PiYTbxHg"/>
 <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="m∈contains_module[{p}]" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.event#_Sq06QkHJEeqHd7PiYTbxHg|org.eventb.core.guard#_8qbBUkHMEeqHd7PiYTbxHg"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="p∉published" org.eventb.core.source="/progmanmodel/m2_modules.bum|org.eventb.core.machineFile#m2_modules|org.eventb.core.event#_Sq06QkHJEeqHd7PiYTbxHg|org.eventb.core.guard#_K8pWMEgiEeqeqbGZOOBkaQ"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poSequent name="transfer_module_ownership/grd4/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="2">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m2_modules.bpo|org.eventb.core.poFile#m2_modules|org.eventb.core.poPredicateSet#EVTHYPprogramme_leadex)"/>
@@ -291,12 +293,13 @@
 <org.eventb.core.poIdentifier name="u2" org.eventb.core.type="USER"/>
 <org.eventb.core.poIdentifier name="p" org.eventb.core.type="PROGRAMME"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_leade}" org.eventb.core.parentSet="/progmanmodel/m2_modules.bpo|org.eventb.core.poFile#m2_modules|org.eventb.core.poPredicateSet#EVTIDENTprogramme_leade}" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_leade}" org.eventb.core.parentSet="/progmanmodel/m2_modules.bpo|org.eventb.core.poFile#m2_modules|org.eventb.core.poPredicateSet#EVTIDENTprogramme_leade}" org.eventb.core.poStamp="5">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u1∈logged_in" org.eventb.core.source="/progmanmodel/m1_programmes.bum|org.eventb.core.machineFile#m1_programmes|org.eventb.core.event#_JVsBwUHHEeqHd7PiYTbxHg|org.eventb.core.guard#_7nLN4UHHEeqHd7PiYTbxHg"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="u2∈registered" org.eventb.core.source="/progmanmodel/m1_programmes.bum|org.eventb.core.machineFile#m1_programmes|org.eventb.core.event#_JVsBwUHHEeqHd7PiYTbxHg|org.eventb.core.guard#_7nLN4kHHEeqHd7PiYTbxHg"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="p∈programmes" org.eventb.core.source="/progmanmodel/m1_programmes.bum|org.eventb.core.machineFile#m1_programmes|org.eventb.core.event#_JVsBwUHHEeqHd7PiYTbxHg|org.eventb.core.guard#_7nL08EHHEeqHd7PiYTbxHg"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="programme_leader(p)=u1" org.eventb.core.source="/progmanmodel/m1_programmes.bum|org.eventb.core.machineFile#m1_programmes|org.eventb.core.event#_JVsBwUHHEeqHd7PiYTbxHg|org.eventb.core.guard#_gpmIoEgTEeqeqbGZOOBkaQ"/>
 <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="u2∉administrators[{p}]" org.eventb.core.source="/progmanmodel/m1_programmes.bum|org.eventb.core.machineFile#m1_programmes|org.eventb.core.event#_JVsBwUHHEeqHd7PiYTbxHg|org.eventb.core.guard#_sio3sEHHEeqHd7PiYTbxHg"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="p∉published" org.eventb.core.source="/progmanmodel/m1_programmes.bum|org.eventb.core.machineFile#m1_programmes|org.eventb.core.event#_JVsBwUHHEeqHd7PiYTbxHg|org.eventb.core.guard#_cDwN8EHIEeqHd7PiYTbxHg"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poPredicateSet name="EVTIDENTprogramme_leade~" org.eventb.core.parentSet="/progmanmodel/m2_modules.bpo|org.eventb.core.poFile#m2_modules|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="2">
 <org.eventb.core.poIdentifier name="u1" org.eventb.core.type="USER"/>
@@ -304,13 +307,14 @@
 <org.eventb.core.poIdentifier name="u2" org.eventb.core.type="USER"/>
 <org.eventb.core.poIdentifier name="p" org.eventb.core.type="PROGRAMME"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_leade~" org.eventb.core.parentSet="/progmanmodel/m2_modules.bpo|org.eventb.core.poFile#m2_modules|org.eventb.core.poPredicateSet#EVTIDENTprogramme_leade~" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_leade~" org.eventb.core.parentSet="/progmanmodel/m2_modules.bpo|org.eventb.core.poFile#m2_modules|org.eventb.core.poPredicateSet#EVTIDENTprogramme_leade~" org.eventb.core.poStamp="5">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u1∈logged_in" org.eventb.core.source="/progmanmodel/m1_programmes.bum|org.eventb.core.machineFile#m1_programmes|org.eventb.core.event#_JVsBwkHHEeqHd7PiYTbxHg|org.eventb.core.guard#_gpk6gEgTEeqeqbGZOOBkaQ"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="u2∈registered" org.eventb.core.source="/progmanmodel/m1_programmes.bum|org.eventb.core.machineFile#m1_programmes|org.eventb.core.event#_JVsBwkHHEeqHd7PiYTbxHg|org.eventb.core.guard#_gplhkEgTEeqeqbGZOOBkaQ"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="p∈programmes" org.eventb.core.source="/progmanmodel/m1_programmes.bum|org.eventb.core.machineFile#m1_programmes|org.eventb.core.event#_JVsBwkHHEeqHd7PiYTbxHg|org.eventb.core.guard#_gplhkUgTEeqeqbGZOOBkaQ"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="programme_leader(p)=u1" org.eventb.core.source="/progmanmodel/m1_programmes.bum|org.eventb.core.machineFile#m1_programmes|org.eventb.core.event#_JVsBwkHHEeqHd7PiYTbxHg|org.eventb.core.guard#_oW1hIkgTEeqeqbGZOOBkaQ"/>
 <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="u2∈administrators[{p}]" org.eventb.core.source="/progmanmodel/m1_programmes.bum|org.eventb.core.machineFile#m1_programmes|org.eventb.core.event#_JVsBwkHHEeqHd7PiYTbxHg|org.eventb.core.guard#_3BElcUHHEeqHd7PiYTbxHg"/>
-<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="u1≠u2" org.eventb.core.source="/progmanmodel/m1_programmes.bum|org.eventb.core.machineFile#m1_programmes|org.eventb.core.event#_JVsBwkHHEeqHd7PiYTbxHg|org.eventb.core.guard#_cDwN8EHIEeqHd7PiYTbxHg"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="u1≠u2" org.eventb.core.source="/progmanmodel/m1_programmes.bum|org.eventb.core.machineFile#m1_programmes|org.eventb.core.event#_JVsBwkHHEeqHd7PiYTbxHg|org.eventb.core.guard#_eZxgUEc9EeqCJoBEKqsuQA"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="p∉published" org.eventb.core.source="/progmanmodel/m1_programmes.bum|org.eventb.core.machineFile#m1_programmes|org.eventb.core.event#_JVsBwkHHEeqHd7PiYTbxHg|org.eventb.core.guard#_WXhJ8EgVEeqeqbGZOOBkaQ"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poPredicateSet name="EVTIDENTprogramme_leadf'" org.eventb.core.parentSet="/progmanmodel/m2_modules.bpo|org.eventb.core.poFile#m2_modules|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="2">
 <org.eventb.core.poIdentifier name="u1" org.eventb.core.type="USER"/>
@@ -318,13 +322,14 @@
 <org.eventb.core.poIdentifier name="u2" org.eventb.core.type="USER"/>
 <org.eventb.core.poIdentifier name="p" org.eventb.core.type="PROGRAMME"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_leadf'" org.eventb.core.parentSet="/progmanmodel/m2_modules.bpo|org.eventb.core.poFile#m2_modules|org.eventb.core.poPredicateSet#EVTIDENTprogramme_leadf'" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_leadf'" org.eventb.core.parentSet="/progmanmodel/m2_modules.bpo|org.eventb.core.poFile#m2_modules|org.eventb.core.poPredicateSet#EVTIDENTprogramme_leadf'" org.eventb.core.poStamp="5">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u1∈logged_in" org.eventb.core.source="/progmanmodel/m1_programmes.bum|org.eventb.core.machineFile#m1_programmes|org.eventb.core.event#_JVso0EHHEeqHd7PiYTbxHg|org.eventb.core.guard#_oW06EEgTEeqeqbGZOOBkaQ"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="u2∈registered" org.eventb.core.source="/progmanmodel/m1_programmes.bum|org.eventb.core.machineFile#m1_programmes|org.eventb.core.event#_JVso0EHHEeqHd7PiYTbxHg|org.eventb.core.guard#_oW1hIEgTEeqeqbGZOOBkaQ"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="p∈programmes" org.eventb.core.source="/progmanmodel/m1_programmes.bum|org.eventb.core.machineFile#m1_programmes|org.eventb.core.event#_JVso0EHHEeqHd7PiYTbxHg|org.eventb.core.guard#_oW1hIUgTEeqeqbGZOOBkaQ"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="programme_leader(p)=u1" org.eventb.core.source="/progmanmodel/m1_programmes.bum|org.eventb.core.machineFile#m1_programmes|org.eventb.core.event#_JVso0EHHEeqHd7PiYTbxHg|org.eventb.core.guard#_aUM3YEgUEeqeqbGZOOBkaQ"/>
 <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="u2∈administrators[{p}]" org.eventb.core.source="/progmanmodel/m1_programmes.bum|org.eventb.core.machineFile#m1_programmes|org.eventb.core.event#_JVso0EHHEeqHd7PiYTbxHg|org.eventb.core.guard#_7nMcAEHHEeqHd7PiYTbxHg"/>
-<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="u1≠u2" org.eventb.core.source="/progmanmodel/m1_programmes.bum|org.eventb.core.machineFile#m1_programmes|org.eventb.core.event#_JVso0EHHEeqHd7PiYTbxHg|org.eventb.core.guard#_eZxgUEc9EeqCJoBEKqsuQA"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="u1≠u2" org.eventb.core.source="/progmanmodel/m1_programmes.bum|org.eventb.core.machineFile#m1_programmes|org.eventb.core.event#_JVso0EHHEeqHd7PiYTbxHg|org.eventb.core.guard#_bx1dkEgVEeqeqbGZOOBkaQ"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="p∉published" org.eventb.core.source="/progmanmodel/m1_programmes.bum|org.eventb.core.machineFile#m1_programmes|org.eventb.core.event#_JVso0EHHEeqHd7PiYTbxHg|org.eventb.core.guard#_bx1dkUgVEeqeqbGZOOBkaQ"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poSequent name="register/inv23/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m2_modules.bpo|org.eventb.core.poFile#m2_modules|org.eventb.core.poPredicateSet#EVTALLHYPprogramme_leadf("/>

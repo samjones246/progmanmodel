@@ -15,11 +15,11 @@
 <org.eventb.core.psStatus name="delete_programme/inv13/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
 <org.eventb.core.psStatus name="delete_programme/inv14/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
 <org.eventb.core.psStatus name="add_administrator/grd4/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="5" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="add_administrator/inv13/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="5" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="add_administrator/inv13/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
 <org.eventb.core.psStatus name="remove_administrator/grd4/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="5" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="remove_administrator/inv13/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="5" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="remove_administrator/inv13/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
 <org.eventb.core.psStatus name="transfer_ownership/grd4/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="5" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="transfer_ownership/inv12/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="5" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="transfer_ownership/inv12/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
 <org.eventb.core.psStatus name="register/inv12/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="3" org.eventb.core.psManual="false"/>
 <org.eventb.core.psStatus name="register/inv13/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="3" org.eventb.core.psManual="false"/>
 <org.eventb.core.psStatus name="unregister/inv12/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="3" org.eventb.core.psManual="false"/>
