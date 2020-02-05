@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1580756601724" org.eventb.texttools.text_representation="context c5_semesters extends c4_prerequisites&#10;sets SEMESTER YEAR&#10;constants semester year&#10;axioms&#10;&#9;@axm1 semester = {1,2}&#10;&#9;@axm2 year = {1,2,3,4}&#10;end&#10;" version="3">
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1580902177684" org.eventb.texttools.text_representation="context c5_semesters extends c4_prerequisites&#10;sets SEMESTER YEAR&#10;constants semester year&#10;axioms&#10;&#9;@axm51 semester = {1,2}&#10;&#9;@axm52 year = {1,2,3,4}&#10;end&#10;" version="3">
 <org.eventb.core.extendsContext name="'" org.eventb.core.target="c4_prerequisites"/>
 <org.eventb.core.carrierSet name="_sTDq8EamEeqCJoBEKqsuQA" org.eventb.core.generated="false" org.eventb.core.identifier="SEMESTER"/>
-<org.eventb.core.axiom name="_sTDq8UamEeqCJoBEKqsuQA" org.eventb.core.generated="false" org.eventb.core.label="axm1" org.eventb.core.predicate="semester = {1,2}"/>
 <org.eventb.core.carrierSet name="_efDTEEanEeqCJoBEKqsuQA" org.eventb.core.generated="false" org.eventb.core.identifier="YEAR"/>
-<org.eventb.core.axiom name="_efEhMkanEeqCJoBEKqsuQA" org.eventb.core.generated="false" org.eventb.core.label="axm2" org.eventb.core.predicate="year = {1,2,3,4}"/>
 <org.eventb.core.constant name="_dvYQAEavEeqCJoBEKqsuQA" org.eventb.core.generated="false" org.eventb.core.identifier="semester"/>
 <org.eventb.core.constant name="_dvY3EEavEeqCJoBEKqsuQA" org.eventb.core.generated="false" org.eventb.core.identifier="year"/>
+<org.eventb.core.axiom name="_aP8HoEgCEeqeqbGZOOBkaQ" org.eventb.core.generated="false" org.eventb.core.label="axm51" org.eventb.core.predicate="semester = {1,2}"/>
+<org.eventb.core.axiom name="_aP8HoUgCEeqeqbGZOOBkaQ" org.eventb.core.generated="false" org.eventb.core.label="axm52" org.eventb.core.predicate="year = {1,2,3,4}"/>
 </org.eventb.core.contextFile>

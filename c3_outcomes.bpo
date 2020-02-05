@@ -4,6 +4,8 @@
 <org.eventb.core.poIdentifier name="USER" org.eventb.core.type="ℙ(USER)"/>
 <org.eventb.core.poIdentifier name="PROGRAMME" org.eventb.core.type="ℙ(PROGRAMME)"/>
 <org.eventb.core.poIdentifier name="MODULE" org.eventb.core.type="ℙ(MODULE)"/>
+<org.eventb.core.poIdentifier name="credits" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poPredicate name="PROGRAMMF" org.eventb.core.predicate="credits={15,30,45,60}" org.eventb.core.source="/progmanmodel/c2_modules.buc|org.eventb.core.contextFile#c2_modules|org.eventb.core.axiom#_rGOvUUgCEeqeqbGZOOBkaQ"/>
 <org.eventb.core.poIdentifier name="M_OUTCOME" org.eventb.core.type="ℙ(M_OUTCOME)"/>
 <org.eventb.core.poIdentifier name="P_OUTCOME" org.eventb.core.type="ℙ(P_OUTCOME)"/>
 </org.eventb.core.poPredicateSet>
