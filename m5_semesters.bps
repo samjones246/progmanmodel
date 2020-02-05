@@ -21,5 +21,5 @@
 <org.eventb.core.psStatus name="delete_module/inv53/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="4" org.eventb.core.psManual="false"/>
 <org.eventb.core.psStatus name="assign_module/grd51/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="4" org.eventb.core.psManual="false"/>
 <org.eventb.core.psStatus name="create_programme/inv51/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="4" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="delete_programme/inv51/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="4" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="delete_programme/inv51/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>

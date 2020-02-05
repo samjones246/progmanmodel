@@ -15,7 +15,7 @@
 <org.eventb.core.psStatus name="transfer_module_ownership/grd4/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
 <org.eventb.core.psStatus name="transfer_module_ownership/inv23/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
 <org.eventb.core.psStatus name="create_programme/inv22/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="delete_programme/inv22/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="delete_programme/inv22/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="4" org.eventb.core.psManual="false"/>
 <org.eventb.core.psStatus name="register/inv23/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
 <org.eventb.core.psStatus name="unregister/inv23/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>
