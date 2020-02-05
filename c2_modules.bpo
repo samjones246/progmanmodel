@@ -4,6 +4,9 @@
 <org.eventb.core.poIdentifier name="USER" org.eventb.core.type="ℙ(USER)"/>
 <org.eventb.core.poIdentifier name="PROGRAMME" org.eventb.core.type="ℙ(PROGRAMME)"/>
 <org.eventb.core.poIdentifier name="MODULE" org.eventb.core.type="ℙ(MODULE)"/>
+<org.eventb.core.poIdentifier name="credits" org.eventb.core.type="ℙ(ℤ)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/progmanmodel/c2_modules.bpo|org.eventb.core.poFile#c2_modules|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/progmanmodel/c2_modules.bpo|org.eventb.core.poFile#c2_modules|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="credits={15,30,45,60}" org.eventb.core.source="/progmanmodel/c2_modules.buc|org.eventb.core.contextFile#c2_modules|org.eventb.core.axiom#_rGOvUUgCEeqeqbGZOOBkaQ"/>
+</org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>
