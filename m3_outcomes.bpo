@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="11">
+<org.eventb.core.poFile org.eventb.core.poStamp="12">
 <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="USER" org.eventb.core.type="ℙ(USER)"/>
 <org.eventb.core.poIdentifier name="PROGRAMME" org.eventb.core.type="ℙ(PROGRAMME)"/>
@@ -143,7 +143,7 @@
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOneMUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_WOpTYkHWEeqHCPZ-G665YQ"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/progmanmodel/m3_outcomes.bpo|org.eventb.core.poFile#m3_outcomes|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/progmanmodel/m3_outcomes.bpo|org.eventb.core.poFile#m3_outcomes|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomew)"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="assign_module_outcome/inv32/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="9">
+<org.eventb.core.poSequent name="assign_module_outcome/inv32/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="12">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m3_outcomes.bpo|org.eventb.core.poFile#m3_outcomes|org.eventb.core.poPredicateSet#EVTALLHYPprogramme_outcomew"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="module_outcomes∪{m ↦ o}∈modules ↔ M_OUTCOME" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.invariant#_Jmq7sEHVEeqHCPZ-G665YQ"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOneMUHWEeqHCPZ-G665YQ"/>
@@ -162,9 +162,10 @@
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="m∈modules" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOneMUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_WOpTYEHWEeqHCPZ-G665YQ"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="o∈M_OUTCOME" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOneMUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_WOpTYUHWEeqHCPZ-G665YQ"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_outcomew" org.eventb.core.parentSet="/progmanmodel/m3_outcomes.bpo|org.eventb.core.poFile#m3_outcomes|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomew)" org.eventb.core.poStamp="9">
+<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_outcomew" org.eventb.core.parentSet="/progmanmodel/m3_outcomes.bpo|org.eventb.core.poFile#m3_outcomes|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomew)" org.eventb.core.poStamp="12">
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="u=module_leader(m)" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOneMUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_WOpTYkHWEeqHCPZ-G665YQ"/>
 <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="o∉module_outcomes[{m}]" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOneMUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_WOpTY0HWEeqHCPZ-G665YQ"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="m∉contains_module[published]" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOneMUHWEeqHCPZ-G665YQ|org.eventb.core.guard#__Ke6AEjBEeqDwOH5c8gGmw"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poSequent name="unassign_module_outcome/grd4/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="9">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m3_outcomes.bpo|org.eventb.core.poFile#m3_outcomes|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomex)"/>
@@ -172,7 +173,7 @@
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOpTZUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_WOrIkEHWEeqHCPZ-G665YQ"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/progmanmodel/m3_outcomes.bpo|org.eventb.core.poFile#m3_outcomes|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/progmanmodel/m3_outcomes.bpo|org.eventb.core.poFile#m3_outcomes|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomex)"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="unassign_module_outcome/inv32/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="9">
+<org.eventb.core.poSequent name="unassign_module_outcome/inv32/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="12">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m3_outcomes.bpo|org.eventb.core.poFile#m3_outcomes|org.eventb.core.poPredicateSet#EVTALLHYPprogramme_outcomex"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="module_outcomes ∖ {m ↦ o}∈modules ↔ M_OUTCOME" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.invariant#_Jmq7sEHVEeqHCPZ-G665YQ"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOpTZUHWEeqHCPZ-G665YQ"/>
@@ -191,9 +192,10 @@
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="m∈modules" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOpTZUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_WOqhgEHWEeqHCPZ-G665YQ"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="o∈M_OUTCOME" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOpTZUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_WOqhgUHWEeqHCPZ-G665YQ"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_outcomex" org.eventb.core.parentSet="/progmanmodel/m3_outcomes.bpo|org.eventb.core.poFile#m3_outcomes|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomex)" org.eventb.core.poStamp="9">
+<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_outcomex" org.eventb.core.parentSet="/progmanmodel/m3_outcomes.bpo|org.eventb.core.poFile#m3_outcomes|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomex)" org.eventb.core.poStamp="12">
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="u=module_leader(m)" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOpTZUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_WOrIkEHWEeqHCPZ-G665YQ"/>
 <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="o∈module_outcomes[{m}]" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOpTZUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_WOrIkUHWEeqHCPZ-G665YQ"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="m∉contains_module[published]" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOpTZUHWEeqHCPZ-G665YQ|org.eventb.core.guard#__KgvMEjBEeqDwOH5c8gGmw"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poSequent name="map_outcome/inv44/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="10">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m3_outcomes.bpo|org.eventb.core.poFile#m3_outcomes|org.eventb.core.poPredicateSet#EVTALLHYPprogramme_outcomey"/>

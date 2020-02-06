@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="27">
+<org.eventb.core.poFile org.eventb.core.poStamp="30">
 <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="USER" org.eventb.core.type="ℙ(USER)"/>
 <org.eventb.core.poIdentifier name="PROGRAMME" org.eventb.core.type="ℙ(PROGRAMME)"/>
@@ -127,25 +127,25 @@
 <org.eventb.core.poIdentifier name="logged_in'" org.eventb.core.type="ℙ(USER)"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_outcomet" org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTIDENTprogramme_outcomet" org.eventb.core.poStamp="4"/>
-<org.eventb.core.poSequent name="change_semester/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="26">
+<org.eventb.core.poSequent name="change_semester/grd3/WD" org.eventb.core.accurate="false" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="30">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomeu("/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="m∈dom(module_semester)∧module_semester∈MODULE ⇸ ℤ" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_tmqr0Ec-EeqCJoBEKqsuQA|org.eventb.core.guard#_tmr58Ec-EeqCJoBEKqsuQA"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_tmqr0Ec-EeqCJoBEKqsuQA|org.eventb.core.guard#_tmr58Ec-EeqCJoBEKqsuQA"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomeu("/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="change_semester/grd6/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="27">
+<org.eventb.core.poSequent name="change_semester/grd6/WD" org.eventb.core.accurate="false" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="30">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomeu)"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀m2⦂MODULE·(m2∈modules∧m2∈prerequisites[{m}]⇒m∈dom(module_year)∧module_year∈MODULE ⇸ ℤ∧m2∈dom(module_year))∧(m2∈modules∧m2∈prerequisites[{m}]∧module_year(m)=module_year(m2)⇒m2∈dom(module_semester)∧module_semester∈MODULE ⇸ ℤ)" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_tmqr0Ec-EeqCJoBEKqsuQA|org.eventb.core.guard#_Uj4VEEdEEeqCJoBEKqsuQA"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_tmqr0Ec-EeqCJoBEKqsuQA|org.eventb.core.guard#_Uj4VEEdEEeqCJoBEKqsuQA"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomeu)"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="change_semester/grd7/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="27">
+<org.eventb.core.poSequent name="change_semester/grd7/WD" org.eventb.core.accurate="false" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="30">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomeu*"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀m2⦂MODULE·(m2∈modules∧m∈prerequisites[{m2}]⇒m∈dom(module_year)∧module_year∈MODULE ⇸ ℤ∧m2∈dom(module_year))∧(m2∈modules∧m∈prerequisites[{m2}]∧module_year(m)=module_year(m2)⇒m2∈dom(module_semester)∧module_semester∈MODULE ⇸ ℤ)" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_tmqr0Ec-EeqCJoBEKqsuQA|org.eventb.core.guard#_Uj4VEUdEEeqCJoBEKqsuQA"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_tmqr0Ec-EeqCJoBEKqsuQA|org.eventb.core.guard#_Uj4VEUdEEeqCJoBEKqsuQA"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomeu*"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="change_semester/inv52/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="27">
+<org.eventb.core.poSequent name="change_semester/inv52/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="30">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTALLHYPprogramme_outcomeu"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="module_semester{m ↦ s}∈modules → semester" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.invariant#_cOgxk0J6EeqHCPZ-G665YQ"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_tmqr0Ec-EeqCJoBEKqsuQA"/>
@@ -153,7 +153,7 @@
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poSequent#change_semester\/inv52\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#HYPc4_prerequisitev|org.eventb.core.poPredicate#PRD1"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="change_semester/inv55/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="27">
+<org.eventb.core.poSequent name="change_semester/inv55/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="30">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTALLHYPprogramme_outcomeu"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀m1⦂MODULE,m2⦂MODULE·{m1,m2}⊆modules∧m2∈prerequisites[{m1}]∧module_year(m1)=module_year(m2)⇒(module_semester{m ↦ s})(m1)&gt;(module_semester{m ↦ s})(m2)" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.invariant#_CWrO0Eg2EeqeqbGZOOBkaQ"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_tmqr0Ec-EeqCJoBEKqsuQA"/>
@@ -203,13 +203,13 @@
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_x1gjcEdBEeqCJoBEKqsuQA|org.eventb.core.guard#_8Gra8Eg2EeqeqbGZOOBkaQ"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomev+"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="change_year/grd7/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="27">
+<org.eventb.core.poSequent name="change_year/grd7/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="30">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomev,"/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀m2⦂MODULE·(m2∈modules∧m∈prerequisites[{m2}]⇒m2∈dom(module_year)∧module_year∈MODULE ⇸ ℤ)∧(m2∈modules∧m∈prerequisites[{m2}]∧y=module_year(m2)⇒m∈dom(module_semester)∧module_semester∈MODULE ⇸ ℤ∧m2∈dom(module_semester))" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_x1gjcEdBEeqCJoBEKqsuQA|org.eventb.core.guard#_8Gra8Ug2EeqeqbGZOOBkaQ"/>
-<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_x1gjcEdBEeqCJoBEKqsuQA|org.eventb.core.guard#_8Gra8Ug2EeqeqbGZOOBkaQ"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀m2⦂MODULE·(m2∈modules∧m∈prerequisites[{m2}]⇒m2∈dom(module_year)∧module_year∈MODULE ⇸ ℤ)∧(m2∈modules∧m∈prerequisites[{m2}]∧y=module_year(m2)⇒m∈dom(module_semester)∧module_semester∈MODULE ⇸ ℤ∧m2∈dom(module_semester))" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_x1gjcEdBEeqCJoBEKqsuQA|org.eventb.core.guard#_6TumcEjBEeqDwOH5c8gGmw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_x1gjcEdBEeqCJoBEKqsuQA|org.eventb.core.guard#_6TumcEjBEeqDwOH5c8gGmw"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomev,"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="change_year/inv53/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="27">
+<org.eventb.core.poSequent name="change_year/inv53/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="30">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTALLHYPprogramme_outcomev"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="module_year{m ↦ y}∈modules → year" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.invariant#_Zoo9wEanEeqCJoBEKqsuQA"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_x1gjcEdBEeqCJoBEKqsuQA"/>
@@ -217,7 +217,7 @@
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poSequent#change_year\/inv53\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#HYPc4_prerequisitev|org.eventb.core.poPredicate#PRD2"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="change_year/inv54/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="27">
+<org.eventb.core.poSequent name="change_year/inv54/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="30">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTALLHYPprogramme_outcomev"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀m1⦂MODULE,m2⦂MODULE·{m1,m2}⊆modules∧m2∈prerequisites[{m1}]⇒(module_year{m ↦ y})(m1)≥(module_year{m ↦ y})(m2)" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.invariant#_TJxqgEg0EeqeqbGZOOBkaQ"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_x1gjcEdBEeqCJoBEKqsuQA"/>
@@ -225,7 +225,7 @@
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poSequent#change_year\/inv54\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#HYPc4_prerequisitew|org.eventb.core.poPredicate#PRD3"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="change_year/inv55/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="27">
+<org.eventb.core.poSequent name="change_year/inv55/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="30">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTALLHYPprogramme_outcomev"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀m1⦂MODULE,m2⦂MODULE·{m1,m2}⊆modules∧m2∈prerequisites[{m1}]∧(module_year{m ↦ y})(m1)=(module_year{m ↦ y})(m2)⇒module_semester(m1)&gt;module_semester(m2)" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.invariant#_CWrO0Eg2EeqeqbGZOOBkaQ"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_x1gjcEdBEeqCJoBEKqsuQA"/>
@@ -254,8 +254,9 @@
 <org.eventb.core.poPredicateSet name="EVTHYPprogramme_outcomev," org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomev+" org.eventb.core.poStamp="27">
 <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="∀m2⦂MODULE·m2∈modules∧m2∈prerequisites[{m}]∧y=module_year(m2)⇒module_semester(m)&gt;module_semester(m2)" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_x1gjcEdBEeqCJoBEKqsuQA|org.eventb.core.guard#_8Gra8Eg2EeqeqbGZOOBkaQ"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_outcomev" org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomev," org.eventb.core.poStamp="27">
-<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="∀m2⦂MODULE·m2∈modules∧m∈prerequisites[{m2}]∧y=module_year(m2)⇒module_semester(m)&lt;module_semester(m2)" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_x1gjcEdBEeqCJoBEKqsuQA|org.eventb.core.guard#_8Gra8Ug2EeqeqbGZOOBkaQ"/>
+<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_outcomev" org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomev," org.eventb.core.poStamp="30">
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="∀m2⦂MODULE·m2∈modules∧m∈prerequisites[{m2}]∧y=module_year(m2)⇒module_semester(m)&lt;module_semester(m2)" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_x1gjcEdBEeqCJoBEKqsuQA|org.eventb.core.guard#_6TumcEjBEeqDwOH5c8gGmw"/>
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="m∉contains_module[published]" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_x1gjcEdBEeqCJoBEKqsuQA|org.eventb.core.guard#_30zs8EjBEeqDwOH5c8gGmw"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poSequent name="change_duration/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="26">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomew("/>
@@ -263,7 +264,7 @@
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_x1iYoEdBEeqCJoBEKqsuQA|org.eventb.core.guard#_Tr__8UdGEeqCJoBEKqsuQA"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomew("/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="change_duration/inv51/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="27">
+<org.eventb.core.poSequent name="change_duration/inv51/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="28">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTALLHYPprogramme_outcomew"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="programme_duration{p ↦ d}∈programmes → year" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.invariant#_cOgxkkJ6EeqHCPZ-G665YQ"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_x1iYoEdBEeqCJoBEKqsuQA"/>
@@ -280,9 +281,10 @@
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="p∈programmes" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_x1iYoEdBEeqCJoBEKqsuQA|org.eventb.core.guard#_Tr_Y4UdGEeqCJoBEKqsuQA"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="d∈year" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_x1iYoEdBEeqCJoBEKqsuQA|org.eventb.core.guard#_Tr__8EdGEeqCJoBEKqsuQA"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_outcomew" org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomew(" org.eventb.core.poStamp="27">
+<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_outcomew" org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTHYPprogramme_outcomew(" org.eventb.core.poStamp="28">
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="d≠programme_duration(p)" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_x1iYoEdBEeqCJoBEKqsuQA|org.eventb.core.guard#_Tr__8UdGEeqCJoBEKqsuQA"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="contains_module[{p}]⊆module_year∼[{x⦂ℤ·x∈year∧x≤d ∣ x}]" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_x1iYoEdBEeqCJoBEKqsuQA|org.eventb.core.guard#_x1hxkUdBEeqCJoBEKqsuQA"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="p∉published" org.eventb.core.source="/progmanmodel/m5_semesters.bum|org.eventb.core.machineFile#m5_semesters|org.eventb.core.event#_x1iYoEdBEeqCJoBEKqsuQA|org.eventb.core.guard#_zT5tkEjBEeqDwOH5c8gGmw"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poPredicateSet name="EVTIDENTprogramme_outcomex" org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="26">
 <org.eventb.core.poIdentifier name="u" org.eventb.core.type="USER"/>
@@ -425,12 +427,13 @@
 <org.eventb.core.poIdentifier name="o" org.eventb.core.type="M_OUTCOME"/>
 <org.eventb.core.poIdentifier name="m" org.eventb.core.type="MODULE"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_outcome~" org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTIDENTprogramme_outcome~" org.eventb.core.poStamp="26">
+<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_outcome~" org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTIDENTprogramme_outcome~" org.eventb.core.poStamp="30">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u∈logged_in" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOneMUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_WOosUkHWEeqHCPZ-G665YQ"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="m∈modules" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOneMUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_WOpTYEHWEeqHCPZ-G665YQ"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="o∈M_OUTCOME" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOneMUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_WOpTYUHWEeqHCPZ-G665YQ"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="u=module_leader(m)" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOneMUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_WOpTYkHWEeqHCPZ-G665YQ"/>
 <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="o∉module_outcomes[{m}]" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOneMUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_WOpTY0HWEeqHCPZ-G665YQ"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="m∉contains_module[published]" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOneMUHWEeqHCPZ-G665YQ|org.eventb.core.guard#__Ke6AEjBEeqDwOH5c8gGmw"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poPredicateSet name="EVTIDENTprogramme_outcomf'" org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="26">
 <org.eventb.core.poIdentifier name="u" org.eventb.core.type="USER"/>
@@ -438,12 +441,13 @@
 <org.eventb.core.poIdentifier name="o" org.eventb.core.type="M_OUTCOME"/>
 <org.eventb.core.poIdentifier name="m" org.eventb.core.type="MODULE"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_outcomf'" org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTIDENTprogramme_outcomf'" org.eventb.core.poStamp="26">
+<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_outcomf'" org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#EVTIDENTprogramme_outcomf'" org.eventb.core.poStamp="30">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u∈logged_in" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOpTZUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_WOp6c0HWEeqHCPZ-G665YQ"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="m∈modules" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOpTZUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_WOqhgEHWEeqHCPZ-G665YQ"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="o∈M_OUTCOME" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOpTZUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_WOqhgUHWEeqHCPZ-G665YQ"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="u=module_leader(m)" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOpTZUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_WOrIkEHWEeqHCPZ-G665YQ"/>
 <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="o∈module_outcomes[{m}]" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOpTZUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_WOrIkUHWEeqHCPZ-G665YQ"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="m∉contains_module[published]" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOpTZUHWEeqHCPZ-G665YQ|org.eventb.core.guard#__KgvMEjBEeqDwOH5c8gGmw"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poPredicateSet name="EVTIDENTprogramme_outcomf(" org.eventb.core.parentSet="/progmanmodel/m5_semesters.bpo|org.eventb.core.poFile#m5_semesters|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="26">
 <org.eventb.core.poIdentifier name="mo" org.eventb.core.type="M_OUTCOME"/>
