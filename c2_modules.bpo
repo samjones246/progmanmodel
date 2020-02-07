@@ -6,7 +6,17 @@
 <org.eventb.core.poIdentifier name="MODULE" org.eventb.core.type="ℙ(MODULE)"/>
 <org.eventb.core.poIdentifier name="credits" org.eventb.core.type="ℙ(ℤ)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/progmanmodel/c2_modules.bpo|org.eventb.core.poFile#c2_modules|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poSequent name="axm23/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/c2_modules.bpo|org.eventb.core.poFile#c2_modules|org.eventb.core.poPredicateSet#HYPc1_programmeu"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(MODULE)" org.eventb.core.source="/progmanmodel/c2_modules.buc|org.eventb.core.contextFile#c2_modules|org.eventb.core.axiom#_TUmKMEmDEeqDwOH5c8gGmw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/progmanmodel/c2_modules.buc|org.eventb.core.contextFile#c2_modules|org.eventb.core.axiom#_TUmKMEmDEeqDwOH5c8gGmw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/progmanmodel/c2_modules.bpo|org.eventb.core.poFile#c2_modules|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/progmanmodel/c2_modules.bpo|org.eventb.core.poFile#c2_modules|org.eventb.core.poPredicateSet#HYPc1_programmeu"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="HYPc1_programmeu" org.eventb.core.parentSet="/progmanmodel/c2_modules.bpo|org.eventb.core.poFile#c2_modules|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="credits={15,30,45,60}" org.eventb.core.source="/progmanmodel/c2_modules.buc|org.eventb.core.contextFile#c2_modules|org.eventb.core.axiom#_rGOvUUgCEeqeqbGZOOBkaQ"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="finite(MODULE)" org.eventb.core.source="/progmanmodel/c2_modules.buc|org.eventb.core.contextFile#c2_modules|org.eventb.core.axiom#_TUljIEmDEeqDwOH5c8gGmw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/progmanmodel/c2_modules.bpo|org.eventb.core.poFile#c2_modules|org.eventb.core.poPredicateSet#HYPc1_programmeu" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="card(MODULE)=30" org.eventb.core.source="/progmanmodel/c2_modules.buc|org.eventb.core.contextFile#c2_modules|org.eventb.core.axiom#_TUmKMEmDEeqDwOH5c8gGmw"/>
 </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>

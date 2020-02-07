@@ -12,20 +12,18 @@
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="create_module/inv41/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16" org.eventb.core.prSets="MODULE,M_OUTCOME,PROGRAMME,P_OUTCOME,USER">
+<org.eventb.core.prProof name="create_module/inv41/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18" org.eventb.core.prSets="MODULE,M_OUTCOME,PROGRAMME,P_OUTCOME,USER">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
-<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p19"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p19"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p20"/>
-<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p21"/>
-<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p22"/>
-<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p23"/>
-<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p12,p8,p6,p15,p3,p4,p11,p5,p7,p10,p13,p2,p9,p1,p17,p18">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p20"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p21"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p22"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p23"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p14,p1,p16,p9,p7,p17,p4,p5,p13,p6,p8,p12,p11,p15,p3,p10,p2,p19">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -42,7 +40,7 @@
 <org.eventb.core.prIdent name="module_leader" org.eventb.core.type="ℙ(MODULE×USER)"/>
 <org.eventb.core.prIdent name="module_outcomes" org.eventb.core.type="ℙ(MODULE×M_OUTCOME)"/>
 <org.eventb.core.prIdent name="modules" org.eventb.core.type="ℙ(MODULE)"/>
-<org.eventb.core.prIdent name="outcome_mapping" org.eventb.core.type="ℙ(M_OUTCOME×P_OUTCOME)"/>
+<org.eventb.core.prIdent name="outcome_mapping" org.eventb.core.type="ℙ(MODULE×M_OUTCOME×(PROGRAMME×P_OUTCOME))"/>
 <org.eventb.core.prIdent name="prerequisites" org.eventb.core.type="ℙ(MODULE×MODULE)"/>
 <org.eventb.core.prIdent name="programme_leader" org.eventb.core.type="ℙ(PROGRAMME×USER)"/>
 <org.eventb.core.prIdent name="programme_outcomes" org.eventb.core.type="ℙ(PROGRAMME×P_OUTCOME)"/>
@@ -50,33 +48,33 @@
 <org.eventb.core.prIdent name="published" org.eventb.core.type="ℙ(PROGRAMME)"/>
 <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(USER)"/>
 <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
-<org.eventb.core.prPred name="p19" org.eventb.core.predicate="registered⊆USER"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="registered⊆USER"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{m} ⩤ prerequisites ⩥ {m}∈modules∪{m} ↔ modules∪{m}"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="c∈credits"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PROGRAMME,m⦂MODULE·p∈published∧m∈contains_module[{p}]⇒prerequisites[{m}]⊆contains_module[{p}]"/>
-<org.eventb.core.prPred name="p22" org.eventb.core.predicate="outcome_mapping∈M_OUTCOME ↔ P_OUTCOME"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="published⊆programmes"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="contains_module∈programmes ↔ modules"/>
-<org.eventb.core.prPred name="p20" org.eventb.core.predicate="programmes⊆PROGRAMME"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="credits_awarded∈modules → credits"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="programme_leader∈programmes → registered"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="programme_outcomes∈programmes ↔ P_OUTCOME"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="finite(MODULE)"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="c∈credits"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀p⦂PROGRAMME,m⦂MODULE·p∈published∧m∈contains_module[{p}]⇒prerequisites[{m}]⊆contains_module[{p}]"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="published⊆programmes"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="contains_module∈programmes ↔ modules"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="programmes⊆PROGRAMME"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="credits_awarded∈modules → credits"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="programme_leader∈programmes → registered"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="programme_outcomes∈programmes ↔ P_OUTCOME"/>
 <org.eventb.core.prPred name="p23" org.eventb.core.predicate="m∈MODULE"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="logged_in⊆registered"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="u∈logged_in"/>
-<org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬m∈modules"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="module_outcomes∈modules ↔ M_OUTCOME"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="module_leader∈modules → registered"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="credits={15,30,45,60}"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="prerequisites∈modules ↔ modules"/>
-<org.eventb.core.prPred name="p14" org.eventb.core.predicate="∀o⦂P_OUTCOME,p⦂PROGRAMME·p∈published∧o∈programme_outcomes[{p}]⇒outcome_mapping∼[{o}]≠(∅ ⦂ ℙ(M_OUTCOME))"/>
-<org.eventb.core.prPred name="p17" org.eventb.core.predicate="∀o⦂P_OUTCOME,p⦂PROGRAMME·p∈published∧o∈programme_outcomes[{p}]⇒o∈ran(outcome_mapping)"/>
-<org.eventb.core.prPred name="p15" org.eventb.core.predicate="administrators∈programmes ↔ registered"/>
-<org.eventb.core.prPred name="p16" org.eventb.core.predicate="m∉modules"/>
-<org.eventb.core.prPred name="p21" org.eventb.core.predicate="modules⊆MODULE"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="logged_in⊆registered"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="u∈logged_in"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬m∈modules"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="outcome_mapping∈module_outcomes ↔ programme_outcomes"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="module_outcomes∈modules ↔ M_OUTCOME"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="module_leader∈modules → registered"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="credits={15,30,45,60}"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="prerequisites∈modules ↔ modules"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="card(MODULE)=30"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="administrators∈programmes ↔ registered"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="m∉modules"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="modules⊆MODULE"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="delete_module/inv41/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="MODULE,PROGRAMME,USER">
 <org.eventb.core.lang name="L"/>
@@ -375,25 +373,23 @@
 <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
 <org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="assign_prerequisite/inv41/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22" org.eventb.core.prSets="MODULE,M_OUTCOME,PROGRAMME,P_OUTCOME,USER">
+<org.eventb.core.prProof name="assign_prerequisite/inv41/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24" org.eventb.core.prSets="MODULE,M_OUTCOME,PROGRAMME,P_OUTCOME,USER">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p19" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23"/>
-<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
-<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p25"/>
-<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p26"/>
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p25"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p26"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p22" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p27"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p27"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p28"/>
-<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p29"/>
-<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p30"/>
-<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with u=module_leader(m1)" org.eventb.core.prHyps="p14">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p28"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p29"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p30"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with u=module_leader(m1)" org.eventb.core.prHyps="p16">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p13" org.eventb.core.prInfHyps="p31"/>
-<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p13"/>
-<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p17,p12,p7,p21,p3,p4,p16,p6,p10,p15,p18,p1,p13,p22,p8,p14,p9,p5,p23,p24,p25,p26,p31">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p14" org.eventb.core.prInfHyps="p31"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p19,p1,p21,p13,p9,p23,p4,p5,p18,p7,p11,p17,p15,p20,p2,p14,p24,p10,p16,p8,p6,p25,p26,p27,p31">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -412,7 +408,7 @@
 <org.eventb.core.prIdent name="module_leader" org.eventb.core.type="ℙ(MODULE×USER)"/>
 <org.eventb.core.prIdent name="module_outcomes" org.eventb.core.type="ℙ(MODULE×M_OUTCOME)"/>
 <org.eventb.core.prIdent name="modules" org.eventb.core.type="ℙ(MODULE)"/>
-<org.eventb.core.prIdent name="outcome_mapping" org.eventb.core.type="ℙ(M_OUTCOME×P_OUTCOME)"/>
+<org.eventb.core.prIdent name="outcome_mapping" org.eventb.core.type="ℙ(MODULE×M_OUTCOME×(PROGRAMME×P_OUTCOME))"/>
 <org.eventb.core.prIdent name="prerequisites" org.eventb.core.type="ℙ(MODULE×MODULE)"/>
 <org.eventb.core.prIdent name="programme_leader" org.eventb.core.type="ℙ(PROGRAMME×USER)"/>
 <org.eventb.core.prIdent name="programme_outcomes" org.eventb.core.type="ℙ(PROGRAMME×P_OUTCOME)"/>
@@ -420,42 +416,42 @@
 <org.eventb.core.prIdent name="published" org.eventb.core.type="ℙ(PROGRAMME)"/>
 <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(USER)"/>
 <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
-<org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬m2∈prerequisites[{m1}]"/>
-<org.eventb.core.prPred name="p26" org.eventb.core.predicate="¬m1∈contains_module[published]"/>
-<org.eventb.core.prPred name="p27" org.eventb.core.predicate="registered⊆USER"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀p⦂PROGRAMME,m⦂MODULE·p∈published∧m∈contains_module[{p}]⇒prerequisites[{m}]⊆contains_module[{p}]"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="m2∉prerequisites[{m1}]"/>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="¬m2∈prerequisites[{m1}]"/>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="¬m1∈contains_module[published]"/>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="registered⊆USER"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PROGRAMME,m⦂MODULE·p∈published∧m∈contains_module[{p}]⇒prerequisites[{m}]⊆contains_module[{p}]"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="m2∉prerequisites[{m1}]"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="prerequisites∪{m1 ↦ m2}∈modules ↔ modules"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="contains_module∈programmes ↔ modules"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="module_leader∈MODULE ⇸ USER"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="m1∈dom(module_leader)"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="programme_outcomes∈programmes ↔ P_OUTCOME"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="m1≠m2"/>
-<org.eventb.core.prPred name="p15" org.eventb.core.predicate="module_outcomes∈modules ↔ M_OUTCOME"/>
-<org.eventb.core.prPred name="p17" org.eventb.core.predicate="credits={15,30,45,60}"/>
-<org.eventb.core.prPred name="p18" org.eventb.core.predicate="prerequisites∈modules ↔ modules"/>
-<org.eventb.core.prPred name="p21" org.eventb.core.predicate="administrators∈programmes ↔ registered"/>
-<org.eventb.core.prPred name="p22" org.eventb.core.predicate="m1∈modules"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="contains_module∈programmes ↔ modules"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="module_leader∈MODULE ⇸ USER"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="m1∈dom(module_leader)"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="programme_outcomes∈programmes ↔ P_OUTCOME"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="m1≠m2"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="module_outcomes∈modules ↔ M_OUTCOME"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="credits={15,30,45,60}"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="prerequisites∈modules ↔ modules"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="card(MODULE)=30"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="administrators∈programmes ↔ registered"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="m1∈modules"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="finite(MODULE)"/>
 <org.eventb.core.prPred name="p31" org.eventb.core.predicate="module_leader(m1)∈logged_in"/>
-<org.eventb.core.prPred name="p30" org.eventb.core.predicate="outcome_mapping∈M_OUTCOME ↔ P_OUTCOME"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="published⊆programmes"/>
-<org.eventb.core.prPred name="p25" org.eventb.core.predicate="¬m1=m2"/>
-<org.eventb.core.prPred name="p28" org.eventb.core.predicate="programmes⊆PROGRAMME"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="credits_awarded∈modules → credits"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="programme_leader∈programmes → registered"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="m2∈modules"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="logged_in⊆registered"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="u∈logged_in"/>
-<org.eventb.core.prPred name="p14" org.eventb.core.predicate="u=module_leader(m1)"/>
-<org.eventb.core.prPred name="p16" org.eventb.core.predicate="module_leader∈modules → registered"/>
-<org.eventb.core.prPred name="p19" org.eventb.core.predicate="∀o⦂P_OUTCOME,p⦂PROGRAMME·p∈published∧o∈programme_outcomes[{p}]⇒outcome_mapping∼[{o}]≠(∅ ⦂ ℙ(M_OUTCOME))"/>
-<org.eventb.core.prPred name="p23" org.eventb.core.predicate="∀o⦂P_OUTCOME,p⦂PROGRAMME·p∈published∧o∈programme_outcomes[{p}]⇒o∈ran(outcome_mapping)"/>
-<org.eventb.core.prPred name="p20" org.eventb.core.predicate="m1∉contains_module[published]"/>
-<org.eventb.core.prPred name="p29" org.eventb.core.predicate="modules⊆MODULE"/>
-<org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="published⊆programmes"/>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="¬m1=m2"/>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="programmes⊆PROGRAMME"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="credits_awarded∈modules → credits"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="programme_leader∈programmes → registered"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="m2∈modules"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="logged_in⊆registered"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="u∈logged_in"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="outcome_mapping∈module_outcomes ↔ programme_outcomes"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="u=module_leader(m1)"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="module_leader∈modules → registered"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="m1∉contains_module[published]"/>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="modules⊆MODULE"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="INITIALISATION/inv42/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="MODULE,PROGRAMME">
 <org.eventb.core.lang name="L"/>
@@ -928,23 +924,21 @@
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="unassign_prerequisite/inv41/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21" org.eventb.core.prSets="MODULE,M_OUTCOME,PROGRAMME,P_OUTCOME,USER">
+<org.eventb.core.prProof name="unassign_prerequisite/inv41/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23" org.eventb.core.prSets="MODULE,M_OUTCOME,PROGRAMME,P_OUTCOME,USER">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p22"/>
-<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p19" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23"/>
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p24"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p25"/>
-<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p26"/>
-<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p27"/>
-<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with u=module_leader(m1)" org.eventb.core.prHyps="p13">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p25"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p26"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p27"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with u=module_leader(m1)" org.eventb.core.prHyps="p15">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p12" org.eventb.core.prInfHyps="p28"/>
-<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p12"/>
-<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p16,p11,p7,p20,p3,p4,p15,p6,p10,p14,p17,p2,p12,p21,p8,p13,p9,p5,p1,p22,p23,p28">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p13" org.eventb.core.prInfHyps="p28"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p18,p1,p20,p12,p8,p22,p4,p5,p17,p7,p11,p16,p14,p19,p3,p13,p23,p9,p15,p10,p6,p2,p24,p28">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -963,7 +957,7 @@
 <org.eventb.core.prIdent name="module_leader" org.eventb.core.type="ℙ(MODULE×USER)"/>
 <org.eventb.core.prIdent name="module_outcomes" org.eventb.core.type="ℙ(MODULE×M_OUTCOME)"/>
 <org.eventb.core.prIdent name="modules" org.eventb.core.type="ℙ(MODULE)"/>
-<org.eventb.core.prIdent name="outcome_mapping" org.eventb.core.type="ℙ(M_OUTCOME×P_OUTCOME)"/>
+<org.eventb.core.prIdent name="outcome_mapping" org.eventb.core.type="ℙ(MODULE×M_OUTCOME×(PROGRAMME×P_OUTCOME))"/>
 <org.eventb.core.prIdent name="prerequisites" org.eventb.core.type="ℙ(MODULE×MODULE)"/>
 <org.eventb.core.prIdent name="programme_leader" org.eventb.core.type="ℙ(PROGRAMME×USER)"/>
 <org.eventb.core.prIdent name="programme_outcomes" org.eventb.core.type="ℙ(PROGRAMME×P_OUTCOME)"/>
@@ -971,39 +965,39 @@
 <org.eventb.core.prIdent name="published" org.eventb.core.type="ℙ(PROGRAMME)"/>
 <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(USER)"/>
 <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
-<org.eventb.core.prPred name="p23" org.eventb.core.predicate="¬m1∈contains_module[published]"/>
-<org.eventb.core.prPred name="p24" org.eventb.core.predicate="registered⊆USER"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="m2∈prerequisites[{m1}]"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PROGRAMME,m⦂MODULE·p∈published∧m∈contains_module[{p}]⇒prerequisites[{m}]⊆contains_module[{p}]"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="contains_module∈programmes ↔ modules"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="module_leader∈MODULE ⇸ USER"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="m1∈dom(module_leader)"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="programme_outcomes∈programmes ↔ P_OUTCOME"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬m1∈contains_module[published]"/>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="registered⊆USER"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="m2∈prerequisites[{m1}]"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀p⦂PROGRAMME,m⦂MODULE·p∈published∧m∈contains_module[{p}]⇒prerequisites[{m}]⊆contains_module[{p}]"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="contains_module∈programmes ↔ modules"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="module_leader∈MODULE ⇸ USER"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="m1∈dom(module_leader)"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="programme_outcomes∈programmes ↔ P_OUTCOME"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="prerequisites ∖ {m1 ↦ m2}∈modules ↔ modules"/>
-<org.eventb.core.prPred name="p14" org.eventb.core.predicate="module_outcomes∈modules ↔ M_OUTCOME"/>
-<org.eventb.core.prPred name="p16" org.eventb.core.predicate="credits={15,30,45,60}"/>
-<org.eventb.core.prPred name="p17" org.eventb.core.predicate="prerequisites∈modules ↔ modules"/>
-<org.eventb.core.prPred name="p20" org.eventb.core.predicate="administrators∈programmes ↔ registered"/>
-<org.eventb.core.prPred name="p21" org.eventb.core.predicate="m1∈modules"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="module_outcomes∈modules ↔ M_OUTCOME"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="credits={15,30,45,60}"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="prerequisites∈modules ↔ modules"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="card(MODULE)=30"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="administrators∈programmes ↔ registered"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="m1∈modules"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="finite(MODULE)"/>
 <org.eventb.core.prPred name="p28" org.eventb.core.predicate="module_leader(m1)∈logged_in"/>
-<org.eventb.core.prPred name="p27" org.eventb.core.predicate="outcome_mapping∈M_OUTCOME ↔ P_OUTCOME"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="published⊆programmes"/>
-<org.eventb.core.prPred name="p25" org.eventb.core.predicate="programmes⊆PROGRAMME"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="credits_awarded∈modules → credits"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="programme_leader∈programmes → registered"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="m2∈modules"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="logged_in⊆registered"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="u∈logged_in"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="u=module_leader(m1)"/>
-<org.eventb.core.prPred name="p15" org.eventb.core.predicate="module_leader∈modules → registered"/>
-<org.eventb.core.prPred name="p18" org.eventb.core.predicate="∀o⦂P_OUTCOME,p⦂PROGRAMME·p∈published∧o∈programme_outcomes[{p}]⇒outcome_mapping∼[{o}]≠(∅ ⦂ ℙ(M_OUTCOME))"/>
-<org.eventb.core.prPred name="p22" org.eventb.core.predicate="∀o⦂P_OUTCOME,p⦂PROGRAMME·p∈published∧o∈programme_outcomes[{p}]⇒o∈ran(outcome_mapping)"/>
-<org.eventb.core.prPred name="p19" org.eventb.core.predicate="m1∉contains_module[published]"/>
-<org.eventb.core.prPred name="p26" org.eventb.core.predicate="modules⊆MODULE"/>
-<org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="published⊆programmes"/>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="programmes⊆PROGRAMME"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="credits_awarded∈modules → credits"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="programme_leader∈programmes → registered"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="m2∈modules"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="logged_in⊆registered"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="u∈logged_in"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="outcome_mapping∈module_outcomes ↔ programme_outcomes"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="u=module_leader(m1)"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="module_leader∈modules → registered"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="m1∉contains_module[published]"/>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="modules⊆MODULE"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="unassign_prerequisite/inv42/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="p,m" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7" org.eventb.core.prSets="MODULE,PROGRAMME,USER">
 <org.eventb.core.lang name="L"/>
@@ -1105,18 +1099,16 @@
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="delete_module/inv42/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="p,m0" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19" org.eventb.core.prSets="MODULE,M_OUTCOME,PROGRAMME,P_OUTCOME,USER">
+<org.eventb.core.prProof name="delete_module/inv42/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="p,m0" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21" org.eventb.core.prSets="MODULE,M_OUTCOME,PROGRAMME,P_OUTCOME,USER">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p20"/>
-<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21"/>
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p22"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p22"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p23"/>
-<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p24"/>
-<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p25"/>
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p23"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p24"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p25"/>
 <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees p,m0)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p26">
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PROGRAMME"/>
@@ -1125,9 +1117,9 @@
 <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p29" org.eventb.core.prHyps="p27,p28">
 <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with module_leader(m)=u" org.eventb.core.prHyps="p1">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p11" org.eventb.core.prInfHyps="p30"/>
-<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p11"/>
-<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p29" org.eventb.core.prHyps="p14,p10,p7,p19,p3,p4,p13,p6,p9,p12,p15,p2,p11,p17,p1,p8,p5,p20,p21,p27,p28,p30">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p12" org.eventb.core.prInfHyps="p30"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p29" org.eventb.core.prHyps="p16,p2,p19,p11,p8,p21,p4,p5,p15,p7,p10,p14,p13,p17,p3,p12,p18,p1,p9,p6,p22,p27,p28,p30">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -1149,7 +1141,7 @@
 <org.eventb.core.prIdent name="module_leader" org.eventb.core.type="ℙ(MODULE×USER)"/>
 <org.eventb.core.prIdent name="module_outcomes" org.eventb.core.type="ℙ(MODULE×M_OUTCOME)"/>
 <org.eventb.core.prIdent name="modules" org.eventb.core.type="ℙ(MODULE)"/>
-<org.eventb.core.prIdent name="outcome_mapping" org.eventb.core.type="ℙ(M_OUTCOME×P_OUTCOME)"/>
+<org.eventb.core.prIdent name="outcome_mapping" org.eventb.core.type="ℙ(MODULE×M_OUTCOME×(PROGRAMME×P_OUTCOME))"/>
 <org.eventb.core.prIdent name="prerequisites" org.eventb.core.type="ℙ(MODULE×MODULE)"/>
 <org.eventb.core.prIdent name="programme_leader" org.eventb.core.type="ℙ(PROGRAMME×USER)"/>
 <org.eventb.core.prIdent name="programme_outcomes" org.eventb.core.type="ℙ(PROGRAMME×P_OUTCOME)"/>
@@ -1157,75 +1149,73 @@
 <org.eventb.core.prIdent name="published" org.eventb.core.type="ℙ(PROGRAMME)"/>
 <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(USER)"/>
 <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
-<org.eventb.core.prPred name="p22" org.eventb.core.predicate="registered⊆USER"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PROGRAMME,m⦂MODULE·p∈published∧m∈contains_module[{p}]⇒prerequisites[{m}]⊆contains_module[{p}]"/>
-<org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬m∈ran(contains_module)"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="registered⊆USER"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀p⦂PROGRAMME,m⦂MODULE·p∈published∧m∈contains_module[{p}]⇒prerequisites[{m}]⊆contains_module[{p}]"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬m∈ran(contains_module)"/>
 <org.eventb.core.prPred name="p26" org.eventb.core.predicate="p∈published∧m0∈contains_module[{p}]⇒({m} ⩤ prerequisites ⩥ {m})[{m0}]⊆contains_module[{p}]">
 <org.eventb.core.prIdent name="m0" org.eventb.core.type="MODULE"/>
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PROGRAMME"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="contains_module∈programmes ↔ modules"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="module_leader∈MODULE ⇸ USER"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="programme_outcomes∈programmes ↔ P_OUTCOME"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="contains_module∈programmes ↔ modules"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="module_leader∈MODULE ⇸ USER"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="programme_outcomes∈programmes ↔ P_OUTCOME"/>
 <org.eventb.core.prPred name="p28" org.eventb.core.predicate="m0∈contains_module[{p}]">
 <org.eventb.core.prIdent name="m0" org.eventb.core.type="MODULE"/>
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PROGRAMME"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="module_outcomes∈modules ↔ M_OUTCOME"/>
-<org.eventb.core.prPred name="p14" org.eventb.core.predicate="credits={15,30,45,60}"/>
-<org.eventb.core.prPred name="p15" org.eventb.core.predicate="prerequisites∈modules ↔ modules"/>
-<org.eventb.core.prPred name="p17" org.eventb.core.predicate="m∈modules"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="module_outcomes∈modules ↔ M_OUTCOME"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="credits={15,30,45,60}"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="prerequisites∈modules ↔ modules"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="m∈modules"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀p⦂PROGRAMME,m0⦂MODULE·p∈published∧m0∈contains_module[{p}]⇒({m} ⩤ prerequisites ⩥ {m})[{m0}]⊆contains_module[{p}]"/>
-<org.eventb.core.prPred name="p19" org.eventb.core.predicate="administrators∈programmes ↔ registered"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="card(MODULE)=30"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="administrators∈programmes ↔ registered"/>
 <org.eventb.core.prPred name="p27" org.eventb.core.predicate="p∈published">
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PROGRAMME"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="module_leader(m)=u"/>
-<org.eventb.core.prPred name="p25" org.eventb.core.predicate="outcome_mapping∈M_OUTCOME ↔ P_OUTCOME"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="published⊆programmes"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="finite(MODULE)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="published⊆programmes"/>
 <org.eventb.core.prPred name="p30" org.eventb.core.predicate="module_leader(m)∈logged_in"/>
-<org.eventb.core.prPred name="p23" org.eventb.core.predicate="programmes⊆PROGRAMME"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="credits_awarded∈modules → credits"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="programme_leader∈programmes → registered"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="m∈dom(module_leader)"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="logged_in⊆registered"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="u∈logged_in"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="module_leader∈modules → registered"/>
-<org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀o⦂P_OUTCOME,p⦂PROGRAMME·p∈published∧o∈programme_outcomes[{p}]⇒outcome_mapping∼[{o}]≠(∅ ⦂ ℙ(M_OUTCOME))"/>
-<org.eventb.core.prPred name="p20" org.eventb.core.predicate="∀o⦂P_OUTCOME,p⦂PROGRAMME·p∈published∧o∈programme_outcomes[{p}]⇒o∈ran(outcome_mapping)"/>
-<org.eventb.core.prPred name="p18" org.eventb.core.predicate="m∉ran(contains_module)"/>
-<org.eventb.core.prPred name="p24" org.eventb.core.predicate="modules⊆MODULE"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="programmes⊆PROGRAMME"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="credits_awarded∈modules → credits"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="programme_leader∈programmes → registered"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="m∈dom(module_leader)"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="logged_in⊆registered"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="u∈logged_in"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="outcome_mapping∈module_outcomes ↔ programme_outcomes"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="module_leader∈modules → registered"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="m∉ran(contains_module)"/>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="modules⊆MODULE"/>
 <org.eventb.core.prPred name="p29" org.eventb.core.predicate="({m} ⩤ prerequisites ⩥ {m})[{m0}]⊆contains_module[{p}]">
 <org.eventb.core.prIdent name="m0" org.eventb.core.type="MODULE"/>
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PROGRAMME"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prReas name="r5" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.he:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
 <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.he:1"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="create_module/inv42/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="p,m0" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16" org.eventb.core.prSets="MODULE,M_OUTCOME,PROGRAMME,P_OUTCOME,USER">
+<org.eventb.core.prProof name="create_module/inv42/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="p,m0" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18" org.eventb.core.prSets="MODULE,M_OUTCOME,PROGRAMME,P_OUTCOME,USER">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
-<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p19"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p19"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p20"/>
-<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p21"/>
-<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p22"/>
-<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p23"/>
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p20"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p21"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p22"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p23"/>
 <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees p,m0)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p24">
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PROGRAMME"/>
 <org.eventb.core.prIdent name="m0" org.eventb.core.type="MODULE"/>
 <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p24" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p27" org.eventb.core.prHyps="p25,p26">
-<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p27" org.eventb.core.prHyps="p12,p8,p6,p15,p3,p4,p11,p5,p7,p10,p13,p2,p9,p1,p17,p18,p25,p26">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p27" org.eventb.core.prHyps="p14,p1,p16,p9,p7,p17,p4,p5,p13,p6,p8,p12,p11,p15,p3,p10,p2,p19,p25,p26">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -1246,7 +1236,7 @@
 <org.eventb.core.prIdent name="module_leader" org.eventb.core.type="ℙ(MODULE×USER)"/>
 <org.eventb.core.prIdent name="module_outcomes" org.eventb.core.type="ℙ(MODULE×M_OUTCOME)"/>
 <org.eventb.core.prIdent name="modules" org.eventb.core.type="ℙ(MODULE)"/>
-<org.eventb.core.prIdent name="outcome_mapping" org.eventb.core.type="ℙ(M_OUTCOME×P_OUTCOME)"/>
+<org.eventb.core.prIdent name="outcome_mapping" org.eventb.core.type="ℙ(MODULE×M_OUTCOME×(PROGRAMME×P_OUTCOME))"/>
 <org.eventb.core.prIdent name="prerequisites" org.eventb.core.type="ℙ(MODULE×MODULE)"/>
 <org.eventb.core.prIdent name="programme_leader" org.eventb.core.type="ℙ(PROGRAMME×USER)"/>
 <org.eventb.core.prIdent name="programme_outcomes" org.eventb.core.type="ℙ(PROGRAMME×P_OUTCOME)"/>
@@ -1254,75 +1244,72 @@
 <org.eventb.core.prIdent name="published" org.eventb.core.type="ℙ(PROGRAMME)"/>
 <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(USER)"/>
 <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
-<org.eventb.core.prPred name="p19" org.eventb.core.predicate="registered⊆USER"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PROGRAMME,m⦂MODULE·p∈published∧m∈contains_module[{p}]⇒prerequisites[{m}]⊆contains_module[{p}]"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="registered⊆USER"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀p⦂PROGRAMME,m⦂MODULE·p∈published∧m∈contains_module[{p}]⇒prerequisites[{m}]⊆contains_module[{p}]"/>
 <org.eventb.core.prPred name="p24" org.eventb.core.predicate="p∈published∧m0∈contains_module[{p}]⇒({m} ⩤ prerequisites ⩥ {m})[{m0}]⊆contains_module[{p}]">
 <org.eventb.core.prIdent name="m0" org.eventb.core.type="MODULE"/>
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PROGRAMME"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="contains_module∈programmes ↔ modules"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="programme_outcomes∈programmes ↔ P_OUTCOME"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="contains_module∈programmes ↔ modules"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="programme_outcomes∈programmes ↔ P_OUTCOME"/>
 <org.eventb.core.prPred name="p26" org.eventb.core.predicate="m0∈contains_module[{p}]">
 <org.eventb.core.prIdent name="m0" org.eventb.core.type="MODULE"/>
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PROGRAMME"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="module_outcomes∈modules ↔ M_OUTCOME"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="credits={15,30,45,60}"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="prerequisites∈modules ↔ modules"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="module_outcomes∈modules ↔ M_OUTCOME"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="credits={15,30,45,60}"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="prerequisites∈modules ↔ modules"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀p⦂PROGRAMME,m0⦂MODULE·p∈published∧m0∈contains_module[{p}]⇒({m} ⩤ prerequisites ⩥ {m})[{m0}]⊆contains_module[{p}]"/>
-<org.eventb.core.prPred name="p15" org.eventb.core.predicate="administrators∈programmes ↔ registered"/>
-<org.eventb.core.prPred name="p16" org.eventb.core.predicate="m∉modules"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="card(MODULE)=30"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="administrators∈programmes ↔ registered"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="m∉modules"/>
 <org.eventb.core.prPred name="p25" org.eventb.core.predicate="p∈published">
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PROGRAMME"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="c∈credits"/>
-<org.eventb.core.prPred name="p22" org.eventb.core.predicate="outcome_mapping∈M_OUTCOME ↔ P_OUTCOME"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="published⊆programmes"/>
-<org.eventb.core.prPred name="p20" org.eventb.core.predicate="programmes⊆PROGRAMME"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="credits_awarded∈modules → credits"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="programme_leader∈programmes → registered"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="finite(MODULE)"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="c∈credits"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="published⊆programmes"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="programmes⊆PROGRAMME"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="credits_awarded∈modules → credits"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="programme_leader∈programmes → registered"/>
 <org.eventb.core.prPred name="p23" org.eventb.core.predicate="m∈MODULE"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="logged_in⊆registered"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="u∈logged_in"/>
-<org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬m∈modules"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="module_leader∈modules → registered"/>
-<org.eventb.core.prPred name="p14" org.eventb.core.predicate="∀o⦂P_OUTCOME,p⦂PROGRAMME·p∈published∧o∈programme_outcomes[{p}]⇒outcome_mapping∼[{o}]≠(∅ ⦂ ℙ(M_OUTCOME))"/>
-<org.eventb.core.prPred name="p17" org.eventb.core.predicate="∀o⦂P_OUTCOME,p⦂PROGRAMME·p∈published∧o∈programme_outcomes[{p}]⇒o∈ran(outcome_mapping)"/>
-<org.eventb.core.prPred name="p21" org.eventb.core.predicate="modules⊆MODULE"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="logged_in⊆registered"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="u∈logged_in"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬m∈modules"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="outcome_mapping∈module_outcomes ↔ programme_outcomes"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="module_leader∈modules → registered"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="modules⊆MODULE"/>
 <org.eventb.core.prPred name="p27" org.eventb.core.predicate="({m} ⩤ prerequisites ⩥ {m})[{m0}]⊆contains_module[{p}]">
 <org.eventb.core.prIdent name="m0" org.eventb.core.type="MODULE"/>
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PROGRAMME"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prReas name="r4" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
 <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="publish_programme/inv42/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="p0,m" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7" org.eventb.core.prSets="MODULE,M_OUTCOME,PROGRAMME,P_OUTCOME,USER">
+<org.eventb.core.prProof name="publish_programme/inv42/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="p0,m" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6" org.eventb.core.prSets="MODULE,PROGRAMME,USER">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9"/>
-<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
-<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
-<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p14"/>
-<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p10"/>
 <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees p0,m)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11">
 <org.eventb.core.prIdent name="p0" org.eventb.core.type="PROGRAMME"/>
 <org.eventb.core.prIdent name="m" org.eventb.core.type="MODULE"/>
-<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p16" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p19" org.eventb.core.prHyps="p17,p18">
-<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with u=programme_leader(p)" org.eventb.core.prHyps="p3">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="p12,p13">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with u=programme_leader(p)" org.eventb.core.prHyps="p2">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p20"/>
-<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p2"/>
-<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p19" org.eventb.core.prHyps="p6,p4,p3,p7,p10,p11,p17,p18,p20">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p15"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="p5,p3,p2,p6,p7,p12,p13,p15">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -1337,82 +1324,69 @@
 </org.eventb.core.prRule>
 <org.eventb.core.prIdent name="contains_module" org.eventb.core.type="ℙ(PROGRAMME×MODULE)"/>
 <org.eventb.core.prIdent name="logged_in" org.eventb.core.type="ℙ(USER)"/>
-<org.eventb.core.prIdent name="outcome_mapping" org.eventb.core.type="ℙ(M_OUTCOME×P_OUTCOME)"/>
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PROGRAMME"/>
 <org.eventb.core.prIdent name="prerequisites" org.eventb.core.type="ℙ(MODULE×MODULE)"/>
 <org.eventb.core.prIdent name="programme_leader" org.eventb.core.type="ℙ(PROGRAMME×USER)"/>
-<org.eventb.core.prIdent name="programme_outcomes" org.eventb.core.type="ℙ(PROGRAMME×P_OUTCOME)"/>
 <org.eventb.core.prIdent name="programmes" org.eventb.core.type="ℙ(PROGRAMME)"/>
 <org.eventb.core.prIdent name="published" org.eventb.core.type="ℙ(PROGRAMME)"/>
 <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="registered⊆USER">
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="registered⊆USER">
 <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(USER)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p19" org.eventb.core.predicate="prerequisites[{m}]⊆contains_module[{p0}]">
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="prerequisites[{m}]⊆contains_module[{p0}]">
 <org.eventb.core.prIdent name="m" org.eventb.core.type="MODULE"/>
 <org.eventb.core.prIdent name="p0" org.eventb.core.type="PROGRAMME"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p20" org.eventb.core.predicate="programme_leader(p)∈logged_in"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀p⦂PROGRAMME,m⦂MODULE·p∈published∧m∈contains_module[{p}]⇒prerequisites[{m}]⊆contains_module[{p}]"/>
-<org.eventb.core.prPred name="p15" org.eventb.core.predicate="outcome_mapping∈M_OUTCOME ↔ P_OUTCOME"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="programmes⊆PROGRAMME"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="programme_leader(p)∈logged_in"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀p⦂PROGRAMME,m⦂MODULE·p∈published∧m∈contains_module[{p}]⇒prerequisites[{m}]⊆contains_module[{p}]"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="programmes⊆PROGRAMME"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀p0⦂PROGRAMME,m⦂MODULE·p0∈published∪{p}∧m∈contains_module[{p0}]⇒prerequisites[{m}]⊆contains_module[{p0}]"/>
-<org.eventb.core.prPred name="p18" org.eventb.core.predicate="m∈contains_module[{p0}]">
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="m∈contains_module[{p0}]">
 <org.eventb.core.prIdent name="m" org.eventb.core.type="MODULE"/>
 <org.eventb.core.prIdent name="p0" org.eventb.core.type="PROGRAMME"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬p∈published"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀o⦂P_OUTCOME·o∈programme_outcomes[{p}]⇒outcome_mapping∼[{o}]≠(∅ ⦂ ℙ(M_OUTCOME))"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="∀o⦂P_OUTCOME·o∈programme_outcomes[{p}]⇒o∈ran(outcome_mapping)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="u∈logged_in"/>
-<org.eventb.core.prPred name="p17" org.eventb.core.predicate="p0∈published∪{p}">
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬p∈published"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="u∈logged_in"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="p0∈published∪{p}">
 <org.eventb.core.prIdent name="p0" org.eventb.core.type="PROGRAMME"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="u=programme_leader(p)"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∈programmes"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="p∉published"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀o⦂P_OUTCOME,p⦂PROGRAMME·p∈published∧o∈programme_outcomes[{p}]⇒outcome_mapping∼[{o}]≠(∅ ⦂ ℙ(M_OUTCOME))"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀o⦂P_OUTCOME,p⦂PROGRAMME·p∈published∧o∈programme_outcomes[{p}]⇒o∈ran(outcome_mapping)"/>
-<org.eventb.core.prPred name="p16" org.eventb.core.predicate="p0∈published∪{p}∧m∈contains_module[{p0}]⇒prerequisites[{m}]⊆contains_module[{p0}]">
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="u=programme_leader(p)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="p∈programmes"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∉published"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="p0∈published∪{p}∧m∈contains_module[{p0}]⇒prerequisites[{m}]⊆contains_module[{p0}]">
 <org.eventb.core.prIdent name="m" org.eventb.core.type="MODULE"/>
 <org.eventb.core.prIdent name="p0" org.eventb.core.type="PROGRAMME"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀m⦂MODULE·m∈contains_module[{p}]⇒prerequisites[{m}]⊆contains_module[{p}]"/>
-<org.eventb.core.prPred name="p14" org.eventb.core.predicate="modules⊆MODULE">
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀m⦂MODULE·m∈contains_module[{p}]⇒prerequisites[{m}]⊆contains_module[{p}]"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="modules⊆MODULE">
 <org.eventb.core.prIdent name="modules" org.eventb.core.type="ℙ(MODULE)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
-<org.eventb.core.prReas name="r5" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
-<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="unpublish_programme/inv42/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="p0,m" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19" org.eventb.core.prSets="MODULE,M_OUTCOME,PROGRAMME,P_OUTCOME,USER">
+<org.eventb.core.prProof name="unpublish_programme/inv42/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="p0,m" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21" org.eventb.core.prSets="MODULE,M_OUTCOME,PROGRAMME,P_OUTCOME,USER">
 <org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p17" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p20"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p21"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p22"/>
-<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p23"/>
-<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p24"/>
-<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees p0,m)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p22"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p23"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p24"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees p0,m)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p25">
 <org.eventb.core.prIdent name="p0" org.eventb.core.type="PROGRAMME"/>
 <org.eventb.core.prIdent name="m" org.eventb.core.type="MODULE"/>
-<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p25" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p25" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p28" org.eventb.core.prHyps="p26,p27">
-<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with u=programme_leader(p)" org.eventb.core.prHyps="p12">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with u=programme_leader(p)" org.eventb.core.prHyps="p14">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p10" org.eventb.core.prInfHyps="p29"/>
-<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p10"/>
-<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p28" org.eventb.core.prHyps="p15,p9,p6,p18,p3,p4,p13,p5,p7,p11,p16,p2,p10,p14,p12,p8,p1,p19,p20,p26,p27,p29">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p11" org.eventb.core.prInfHyps="p29"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p28" org.eventb.core.prHyps="p17,p2,p19,p10,p7,p20,p4,p5,p15,p6,p8,p13,p12,p18,p3,p11,p16,p14,p9,p1,p21,p26,p27,p29">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
-</org.eventb.core.prRule>
-</org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
@@ -1430,7 +1404,7 @@
 <org.eventb.core.prIdent name="module_leader" org.eventb.core.type="ℙ(MODULE×USER)"/>
 <org.eventb.core.prIdent name="module_outcomes" org.eventb.core.type="ℙ(MODULE×M_OUTCOME)"/>
 <org.eventb.core.prIdent name="modules" org.eventb.core.type="ℙ(MODULE)"/>
-<org.eventb.core.prIdent name="outcome_mapping" org.eventb.core.type="ℙ(M_OUTCOME×P_OUTCOME)"/>
+<org.eventb.core.prIdent name="outcome_mapping" org.eventb.core.type="ℙ(MODULE×M_OUTCOME×(PROGRAMME×P_OUTCOME))"/>
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PROGRAMME"/>
 <org.eventb.core.prIdent name="prerequisites" org.eventb.core.type="ℙ(MODULE×MODULE)"/>
 <org.eventb.core.prIdent name="programme_leader" org.eventb.core.type="ℙ(PROGRAMME×USER)"/>
@@ -1443,48 +1417,47 @@
 <org.eventb.core.prIdent name="m" org.eventb.core.type="MODULE"/>
 <org.eventb.core.prIdent name="p0" org.eventb.core.type="PROGRAMME"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p21" org.eventb.core.predicate="registered⊆USER"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="registered⊆USER"/>
 <org.eventb.core.prPred name="p28" org.eventb.core.predicate="prerequisites[{m}]⊆contains_module[{p0}]">
 <org.eventb.core.prIdent name="m" org.eventb.core.type="MODULE"/>
 <org.eventb.core.prIdent name="p0" org.eventb.core.type="PROGRAMME"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p⦂PROGRAMME,m⦂MODULE·p∈published∧m∈contains_module[{p}]⇒prerequisites[{m}]⊆contains_module[{p}]"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="contains_module∈programmes ↔ modules"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀p⦂PROGRAMME,m⦂MODULE·p∈published∧m∈contains_module[{p}]⇒prerequisites[{m}]⊆contains_module[{p}]"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="contains_module∈programmes ↔ modules"/>
 <org.eventb.core.prPred name="p27" org.eventb.core.predicate="m∈contains_module[{p0}]">
 <org.eventb.core.prIdent name="m" org.eventb.core.type="MODULE"/>
 <org.eventb.core.prIdent name="p0" org.eventb.core.type="PROGRAMME"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="programme_outcomes∈programmes ↔ P_OUTCOME"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="p∈dom(programme_leader)"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="module_outcomes∈modules ↔ M_OUTCOME"/>
-<org.eventb.core.prPred name="p15" org.eventb.core.predicate="credits={15,30,45,60}"/>
-<org.eventb.core.prPred name="p16" org.eventb.core.predicate="prerequisites∈modules ↔ modules"/>
-<org.eventb.core.prPred name="p18" org.eventb.core.predicate="administrators∈programmes ↔ registered"/>
-<org.eventb.core.prPred name="p19" org.eventb.core.predicate="p∈published"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="programme_outcomes∈programmes ↔ P_OUTCOME"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="p∈dom(programme_leader)"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="module_outcomes∈modules ↔ M_OUTCOME"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="credits={15,30,45,60}"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="prerequisites∈modules ↔ modules"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="card(MODULE)=30"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="administrators∈programmes ↔ registered"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="p∈published"/>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="programme_leader∈PROGRAMME ⇸ USER"/>
 <org.eventb.core.prPred name="p29" org.eventb.core.predicate="programme_leader(p)∈logged_in"/>
-<org.eventb.core.prPred name="p24" org.eventb.core.predicate="outcome_mapping∈M_OUTCOME ↔ P_OUTCOME"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="published⊆programmes"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="finite(MODULE)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="published⊆programmes"/>
 <org.eventb.core.prPred name="p26" org.eventb.core.predicate="p0∈published ∖ {p}">
 <org.eventb.core.prIdent name="p0" org.eventb.core.type="PROGRAMME"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p22" org.eventb.core.predicate="programmes⊆PROGRAMME"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="credits_awarded∈modules → credits"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="programme_leader∈programmes → registered"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="logged_in⊆registered"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="u∈logged_in"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="u=programme_leader(p)"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="module_leader∈modules → registered"/>
-<org.eventb.core.prPred name="p14" org.eventb.core.predicate="p∈programmes"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="programmes⊆PROGRAMME"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="credits_awarded∈modules → credits"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="programme_leader∈programmes → registered"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="logged_in⊆registered"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="u∈logged_in"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="outcome_mapping∈module_outcomes ↔ programme_outcomes"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="u=programme_leader(p)"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="module_leader∈modules → registered"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="p∈programmes"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀p0⦂PROGRAMME,m⦂MODULE·p0∈published ∖ {p}∧m∈contains_module[{p0}]⇒prerequisites[{m}]⊆contains_module[{p0}]"/>
-<org.eventb.core.prPred name="p17" org.eventb.core.predicate="∀o⦂P_OUTCOME,p⦂PROGRAMME·p∈published∧o∈programme_outcomes[{p}]⇒outcome_mapping∼[{o}]≠(∅ ⦂ ℙ(M_OUTCOME))"/>
-<org.eventb.core.prPred name="p20" org.eventb.core.predicate="∀o⦂P_OUTCOME,p⦂PROGRAMME·p∈published∧o∈programme_outcomes[{p}]⇒o∈ran(outcome_mapping)"/>
-<org.eventb.core.prPred name="p23" org.eventb.core.predicate="modules⊆MODULE"/>
-<org.eventb.core.prReas name="r5" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
-<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
-<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="modules⊆MODULE"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
 </org.eventb.core.prProof>
 </org.eventb.core.prFile>
