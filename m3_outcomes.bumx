@@ -1,0 +1,199 @@
+machine m3_outcomes
+refines m2_modules
+sees c3_outcomes
+variables
+	registered
+	logged_in
+	programmes
+	programme_leader
+	administrators
+	modules
+	contains_module
+	module_leader
+	module_outcomes
+	programme_outcomes
+	outcome_mapping
+	credits_awarded
+	published
+invariants
+	@inv31: programme_outcomes ∈ programmes ↔ P_OUTCOME
+	@inv32: module_outcomes ∈ modules ↔ M_OUTCOME
+	@inv33: outcome_mapping ∈ module_outcomes ↔ programme_outcomes
+	@inv34: ∀m · m ∈ dom(dom(outcome_mapping)) ⇒ dom(ran(({m} ◁ dom(outcome_mapping)) ◁outcome_mapping)) ⊆  contains_module∼[{m}]
+events
+	event INITIALISATION extends INITIALISATION
+	then
+		@act31: programme_outcomes ≔ ∅
+		@act32: module_outcomes ≔ ∅
+		@act33: outcome_mapping ≔ ∅
+	end
+
+	event assign_programme_outcome
+	any
+		u
+		p
+		o
+	where
+		@grd1: u ∈ logged_in
+		@grd2: p ∈ programmes
+		@grd3: o ∈ P_OUTCOME
+		@grd4: u ∈ administrators[{p}]
+		@grd5: o ∉  programme_outcomes[{p}]
+		@grd6: p ∉ published
+	then
+		@act1: programme_outcomes ≔ programme_outcomes ∪ {p↦o}
+	end
+
+	event unassign_programme_outcome
+	any
+		u
+		p
+		o
+	where
+		@grd1: u ∈ logged_in
+		@grd2: p ∈ programmes
+		@grd3: o ∈ P_OUTCOME
+		@grd4: u ∈ administrators[{p}]
+		@grd5: o ∈  programme_outcomes[{p}]
+		@grd6: p ∉  published
+	then
+		@act1: programme_outcomes ≔ programme_outcomes ∖ {p↦o}
+		@act2: outcome_mapping ≔ outcome_mapping ⩥ (ran(outcome_mapping) ▷ {o})
+	end
+
+	event assign_module_outcome
+	any
+		u
+		m
+		o
+	where
+		@grd1: u ∈ logged_in
+		@grd2: m ∈ modules
+		@grd3: o ∈ M_OUTCOME
+		@grd4: u = module_leader(m)
+		@grd5: o ∉ module_outcomes[{m}]
+		@grd6: m ∉  contains_module[published]
+	then
+		@act1: module_outcomes ≔ module_outcomes ∪ {m↦o}
+	end
+
+	event unassign_module_outcome
+	any
+		u
+		m
+		o
+	where
+		@grd1: u ∈ logged_in
+		@grd2: m ∈ modules
+		@grd3: o ∈ M_OUTCOME
+		@grd4: u = module_leader(m)
+		@grd5: o ∈ module_outcomes[{m}]
+		@grd6: m ∉  contains_module[published]
+	then
+		@act1: module_outcomes ≔ module_outcomes ∖ {m↦o}
+		@act2: outcome_mapping ≔ (dom(outcome_mapping) ▷ {o}) ⩤ outcome_mapping
+	end
+
+	event map_outcome
+	any
+		u
+		m
+		mo
+		p
+		po
+	where
+		@grd1: u ∈ logged_in
+		@grd2: mo ∈ M_OUTCOME
+		@grd3: po ∈ P_OUTCOME
+		@grd4: p ∈ programmes
+		@grd5: m ∈ modules
+		@grd6: m ∈ contains_module[{p}]
+		@grd7: u ∈ administrators[{p}]
+		@grd8: mo ∈ module_outcomes[{m}]
+		@grd9: po ∈ programme_outcomes[{p}]
+		@grdX: (m↦mo)↦ (p↦po) ∉  outcome_mapping
+	then
+		@act1: outcome_mapping ≔  outcome_mapping ∪  {(m↦mo)↦ (p↦po)}
+	end
+
+	event unmap_outcome
+	any
+		u
+		m
+		mo
+		p
+		po
+	where
+		@grd1: u ∈ logged_in
+		@grd2: mo ∈ M_OUTCOME
+		@grd3: po ∈ P_OUTCOME
+		@grd4: p ∈ programmes
+		@grd5: m ∈ modules
+		@grd6: m ∈ contains_module[{p}]
+		@grd7: u ∈ administrators[{p}]
+		@grd8: mo ∈ module_outcomes[{m}]
+		@grd9: po ∈ programme_outcomes[{p}]
+		@grdX: (m↦mo)↦ (p↦po) ∉  outcome_mapping
+	then
+		@act1: outcome_mapping ≔  outcome_mapping ∪  {(m↦mo)↦ (p↦po)}
+	end
+
+	event publish_programme extends publish_programme
+	where
+		@grd31: ∀po · po ∈ programme_outcomes[{p}] ⇒  outcome_mapping ▷ {p↦po} ≠ ∅
+	end
+
+	event unpublish_programme extends unpublish_programme
+	end
+
+	event create_module extends create_module
+	end
+
+	event delete_module extends delete_module
+	then
+		@act31: outcome_mapping ≔  ({m}◁module_outcomes) ⩤  outcome_mapping
+		@act32: module_outcomes ≔ {m} ⩤ module_outcomes
+	end
+
+	event assign_module extends assign_module
+	end
+
+	event unassign_module extends unassign_module
+	then
+		@act31: outcome_mapping ≔ (({m} ◁  dom(outcome_mapping)) ⩤ outcome_mapping) ⩥ ({p}◁ran(outcome_mapping))
+	end
+
+	event transfer_module_ownership extends transfer_module_ownership
+	end
+
+	event create_programme extends create_programme
+	end
+
+	event delete_programme extends delete_programme
+	then
+		@act31: outcome_mapping ≔  outcome_mapping ⩥ ({p}◁ran(outcome_mapping))
+		@act32: programme_outcomes ≔  {p} ⩤ programme_outcomes
+	end
+
+	event add_administrator extends add_administrator
+	end
+
+	event remove_administrator extends remove_administrator
+	end
+
+	event transfer_ownership extends transfer_ownership
+	end
+
+	event register extends register
+	end
+
+	event unregister extends unregister
+	end
+
+	event login extends login
+	end
+
+	event logout extends logout
+	end
+
+end

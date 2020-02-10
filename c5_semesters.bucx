@@ -1,0 +1,11 @@
+context c5_semesters
+extends c4_prerequisites
+sets
+	SEMESTER
+	YEAR
+constants
+	semester
+	year
+axioms
+	@axm51: semester = {1,2}
+	@axm52: year = {1,2,3,4} end

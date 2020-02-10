@@ -1,0 +1,10 @@
+context c2_modules
+extends c1_programmes
+sets
+	MODULE
+constants
+	credits
+axioms
+	@axm21: credits = {15, 30, 45, 60}
+	@axm22: finite(MODULE)
+	@axm23: card(MODULE) = 30 end

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" version="3">
-<org.eventb.core.extendsContext name="_qcMHkEHSEeqHCPZ-G665YQ" org.eventb.core.target="c0_users"/>
-<org.eventb.core.carrierSet name="_qcMuoEHSEeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.identifier="PROGRAMME"/>
-</org.eventb.core.contextFile>

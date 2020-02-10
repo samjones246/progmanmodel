@@ -1,0 +1,145 @@
+machine m1_programmes
+refines m0_users
+sees c1_programmes
+variables
+	registered
+	logged_in
+	programmes
+	programme_leader
+	administrators
+	published
+invariants
+	@inv11: programmes ⊆ PROGRAMME
+	@inv12: programme_leader ∈ programmes → registered
+	@inv13: administrators ∈ programmes ↔ registered
+	@inv14: published ⊆ programmes
+events
+	event INITIALISATION extends INITIALISATION
+	then
+		@act11: programmes ≔ ∅
+		@act12: programme_leader ≔ ∅
+		@act13: administrators ≔ ∅
+		@act14: published ≔ ∅
+	end
+
+	event publish_programme
+	any
+		u
+		p
+	where
+		@grd1: u ∈ logged_in
+		@grd2: p ∈ programmes
+		@grd3: u = programme_leader(p)
+		@grd4: p ∉ published
+	then
+		@act1: published ≔ published ∪  {p}
+	end
+
+	event unpublish_programme
+	any
+		u
+		p
+	where
+		@grd1: u ∈ logged_in
+		@grd2: p ∈ programmes
+		@grd3: u = programme_leader(p)
+		@grd4: p ∈ published
+	then
+		@act1: published ≔ published ∖  {p}
+	end
+
+	event create_programme
+	any
+		u
+		p
+	where
+		@grd1: u ∈ logged_in
+		@grd2: p ∈ PROGRAMME
+		@grd3: p ∉ programmes
+	then
+		@act1: programmes ≔ programmes ∪ {p}
+		@act2: programme_leader(p) ≔  u
+		@act3: administrators ≔ administrators ∪  {p↦u}
+	end
+
+	event delete_programme
+	any
+		u
+		p
+	where
+		@grd1: u ∈ logged_in
+		@grd2: p ∈ programmes
+		@grd3: programme_leader(p) = u
+		@grd4: p ∉ published
+	then
+		@act1: programmes ≔ programmes ∖ {p}
+		@act2: programme_leader ≔ {p} ⩤ programme_leader
+		@act3: administrators ≔ {p} ⩤ administrators
+	end
+
+	event add_administrator
+	any
+		u1
+		u2
+		p
+	where
+		@grd1: u1 ∈ logged_in
+		@grd2: u2 ∈ registered
+		@grd3: p ∈ programmes
+		@grd4: programme_leader(p) = u1
+		@grd5: u2 ∉ administrators[{p}]
+		@grd6: p ∉  published
+	then
+		@act1: administrators ≔ administrators ∪  {p↦u2}
+	end
+
+	event remove_administrator
+	any
+		u1
+		u2
+		p
+	where
+		@grd1: u1 ∈ logged_in
+		@grd2: u2 ∈ registered
+		@grd3: p ∈ programmes
+		@grd4: programme_leader(p) = u1
+		@grd5: u2 ∈ administrators[{p}]
+		@grd6: u1 ≠ u2
+		@grd7: p ∉  published
+	then
+		@act1: administrators ≔ administrators ∖  {p↦u2}
+	end
+
+	event transfer_ownership
+	any
+		u1
+		u2
+		p
+	where
+		@grd1: u1 ∈ logged_in
+		@grd2: u2 ∈ registered
+		@grd3: p ∈ programmes
+		@grd4: programme_leader(p) = u1
+		@grd5: u2 ∈ administrators[{p}]
+		@grd6: u1 ≠ u2
+		@grd7: p ∉  published
+	then
+		@act1: programme_leader(p) ≔ u2
+	end
+
+	event register extends register
+	end
+
+	event unregister extends unregister
+	where
+		@grd11: u ∉ ran(programme_leader)
+		@grd12: u ∉  ran(administrators)
+	end
+
+	event login extends login
+	end
+
+	event logout extends logout
+	end
+
+end

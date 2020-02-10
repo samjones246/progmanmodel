@@ -1,0 +1,56 @@
+machine m0_users
+sees c0_users
+variables 
+	registered
+	logged_in
+invariants
+	@inv1: registered ⊆ USER
+	@inv2: logged_in ⊆  registered
+events
+	event INITIALISATION
+	then
+		@act1: registered ≔  ∅
+		@act2: logged_in ≔ ∅
+	end
+
+	event register
+	any
+		u
+	where
+		@grd1: u ∈ USER
+		@grd2: u ∉  registered
+	then
+		@act1: registered ≔ registered ∪ {u}
+	end
+
+	event unregister
+	any
+		u
+	where
+		@grd1: u ∈  registered
+		@grd2: u ∉  logged_in
+	then
+		@act1: registered ≔ registered ∖ {u}
+	end
+
+	event login
+	any
+		u
+	where
+		@grd1: u ∈ registered
+		@grd2: u ∉  logged_in
+	then
+		@act1: logged_in ≔ logged_in ∪ {u}
+	end
+
+	event logout
+	any
+		u
+	where
+		@grd1: u ∈ registered
+		@grd2: u ∈  logged_in
+	then
+		@act1: logged_in ≔ logged_in ∖ {u}
+	end
+
+end

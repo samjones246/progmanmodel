@@ -1,0 +1,179 @@
+machine m5_semesters
+refines m4_prerequisites
+sees c5_semesters
+variables
+	registered
+	logged_in
+	programmes
+	programme_leader
+	administrators
+	modules
+	contains_module
+	module_leader
+	module_outcomes
+	programme_outcomes
+	outcome_mapping
+	prerequisites
+	programme_duration
+	module_semester
+	module_year
+	credits_awarded
+	published
+invariants
+	@inv51: programme_duration ∈ programmes → year
+	@inv52: module_semester ∈ modules → semester
+	@inv53: module_year ∈ modules → year
+	@inv54: ∀m1,m2 · {m1,m2} ⊆ modules ∧ m2 ∈ prerequisites[{m1}] ⇒  module_year(m1) ≥ module_year(m2)
+	@inv55: ∀m1, m2 · {m1,m2} ⊆ modules ∧ m2 ∈ prerequisites[{m1}] ∧ module_year(m1) = module_year(m2) ⇒  module_semester(m1) > module_semester(m2)
+events
+	event INITIALISATION extends INITIALISATION
+	then
+		@act51: programme_duration ≔ ∅
+		@act52: module_semester ≔ ∅
+		@act53: module_year ≔ ∅
+	end
+
+	event change_semester
+	any
+		m
+		s
+	where
+		@grd1: m ∈ modules
+		@grd2: s ∈ semester
+		@grd3: module_semester(m) ≠ s
+		@grd6: ∀ m2 · m2 ∈ modules ∧ m2 ∈ prerequisites[{m}] ∧ module_year(m) = module_year(m2) ⇒  s > module_semester(m2)
+		@grd7: ∀ m2 · m2 ∈ modules ∧ m ∈ prerequisites[{m2}] ∧ module_year(m) = module_year(m2) ⇒ s < module_semester(m2)
+		@grd8: m ∉  contains_module[published]
+	then
+		@act1: module_semester(m) ≔  s
+	end
+
+	event change_year
+	any
+		m
+		y
+	where
+		@grd1: m ∈ modules
+		@grd2: y ∈ year
+		@grd3: module_year(m) ≠ y
+		@grd4: ∀m2 · m2 ∈ modules ∧ m2 ∈ prerequisites[{m}] ⇒ module_year(m2) ≤ y
+		@grd5: ∀m2 · m2 ∈ modules ∧ m∈ prerequisites[{m2}] ⇒  module_year(m2) ≥ y
+		@grd6: ∀ m2 · m2 ∈ modules ∧ m2 ∈ prerequisites[{m}] ∧ y = module_year(m2) ⇒  module_semester(m) > module_semester(m2)
+		@grd7: ∀ m2 · m2 ∈ modules ∧ m ∈ prerequisites[{m2}] ∧ y = module_year(m2) ⇒  module_semester(m) < module_semester(m2)
+		@grd8: m ∉  contains_module[published]
+	then
+		@act1: module_year(m) ≔ y
+	end
+
+	event change_duration
+	any
+		p
+		d
+	where
+		@grd1: p ∈ programmes
+		@grd2: d ∈ year
+		@grd3: d ≠ programme_duration(p)
+		@grd4: contains_module[{p}] ⊆  module_year∼[{x ∣ x ∈ year ∧ x ≤ d}]
+		@grd5: p ∉  published
+	then
+		@act1: programme_duration(p) ≔ d
+	end
+
+	event publish_programme extends publish_programme
+	end
+
+	event unpublish_programme extends unpublish_programme
+	end
+
+	event assign_prerequisite extends assign_prerequisite
+	where
+		@grd51: module_year(m2) ≤ module_year(m1)
+		@grd52: module_year(m2) = module_year(m1) ⇒ module_semester(m2) < module_semester(m1)
+	end
+
+	event unassign_prerequisite extends unassign_prerequisite
+	end
+
+	event assign_programme_outcome extends assign_programme_outcome
+	end
+
+	event unassign_programme_outcome extends unassign_programme_outcome
+	end
+
+	event assign_module_outcome extends assign_module_outcome
+	end
+
+	event unassign_module_outcome extends unassign_module_outcome
+	end
+
+	event map_outcome extends map_outcome
+	end
+
+	event unmap_outcome extends unmap_outcome
+	end
+
+	event create_module extends create_module
+	any
+		s
+		y
+	where
+		@grd51: s ∈ semester
+		@grd52: y ∈ year
+	then
+		@act51: module_semester(m) ≔  s
+		@act52: module_year(m) ≔  y
+	end
+
+	event delete_module extends delete_module
+	then
+		@act51: module_semester ≔ {m} ⩤ module_semester
+		@act52: module_year ≔ {m} ⩤ module_year
+	end
+
+	event assign_module extends assign_module
+	where
+		@grd51: module_year(m) ≤ programme_duration(p)
+	end
+
+	event unassign_module extends unassign_module
+	end
+
+	event transfer_module_ownership extends transfer_module_ownership
+	end
+
+	event create_programme extends create_programme
+	any
+		d
+	where
+		@grd51: d ∈ year
+	then
+		@act52: programme_duration(p) ≔ d
+	end
+
+	event delete_programme extends delete_programme
+	then
+		@act52: programme_duration ≔  {p} ⩤ programme_duration
+	end
+
+	event add_administrator extends add_administrator
+	end
+
+	event remove_administrator extends remove_administrator
+	end
+
+	event transfer_ownership extends transfer_ownership
+	end
+
+	event register extends register
+	end
+
+	event unregister extends unregister
+	end
+
+	event login extends login
+	end
+
+	event logout extends logout
+	end
+
+end

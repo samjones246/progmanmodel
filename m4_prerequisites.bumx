@@ -1,0 +1,133 @@
+machine m4_prerequisites
+refines m3_outcomes
+sees c3_outcomes
+variables
+	registered
+	logged_in
+	programmes
+	programme_leader
+	administrators
+	modules
+	contains_module
+	module_leader
+	module_outcomes
+	programme_outcomes
+	outcome_mapping
+	prerequisites
+	credits_awarded
+	published
+invariants
+	@inv41: prerequisites ∈ modules ↔ modules
+	@inv42: ∀p,m · p ∈ published ∧ m ∈ contains_module[{p}] ⇒  prerequisites[{m}] ⊆  contains_module[{p}]
+events
+	event INITIALISATION extends INITIALISATION
+	then
+		@act41: prerequisites ≔ ∅
+	end
+
+	event assign_prerequisite
+	any
+		u
+		m1
+		m2
+	where
+		@grd41: u ∈ logged_in
+		@grd42: m1 ∈ modules
+		@grd43: m2 ∈ modules
+		@grd44: u = module_leader(m1)
+		@grd47: m2 ∉  prerequisites[{m1}]
+		@grd48: m1 ≠ m2
+		@grd49: m1 ∉  contains_module[published]
+	then
+		@act41: prerequisites ≔  prerequisites ∪  {m1↦m2}
+	end
+
+	event unassign_prerequisite
+	any
+		u
+		m1
+		m2
+	where
+		@grd41: u ∈ logged_in
+		@grd42: m1 ∈ modules
+		@grd43: m2 ∈ modules
+		@grd44: u = module_leader(m1)
+		@grd47: m2 ∈  prerequisites[{m1}]
+		@grd48: m1 ∉  contains_module[published]
+	then
+		@act41: prerequisites ≔  prerequisites ∖  {m1↦m2}
+	end
+
+	event publish_programme extends publish_programme
+	where
+		@grd41: ∀m · m ∈ contains_module[{p}] ⇒  prerequisites[{m}] ⊆  contains_module[{p}]
+	end
+
+	event unpublish_programme extends unpublish_programme
+	end
+
+	event assign_programme_outcome extends assign_programme_outcome
+	end
+
+	event unassign_programme_outcome extends unassign_programme_outcome
+	end
+
+	event assign_module_outcome extends assign_module_outcome
+	end
+
+	event unassign_module_outcome extends unassign_module_outcome
+	end
+
+	event map_outcome extends map_outcome
+	end
+
+	event unmap_outcome extends unmap_outcome
+	end
+
+	event create_module extends create_module
+	then
+		@act41: prerequisites ≔  ({m} ⩤ prerequisites) ⩥ {m}
+	end
+
+	event delete_module extends delete_module
+	then
+		@act41: prerequisites ≔  ({m} ⩤ prerequisites) ⩥ {m}
+	end
+
+	event assign_module extends assign_module
+	end
+
+	event unassign_module extends unassign_module
+	end
+
+	event transfer_module_ownership extends transfer_module_ownership
+	end
+
+	event create_programme extends create_programme
+	end
+
+	event delete_programme extends delete_programme
+	end
+
+	event add_administrator extends add_administrator
+	end
+
+	event remove_administrator extends remove_administrator
+	end
+
+	event transfer_ownership extends transfer_ownership
+	end
+
+	event register extends register
+	end
+
+	event unregister extends unregister
+	end
+
+	event login extends login
+	end
+
+	event logout extends logout
+	end
+
+end

@@ -1,0 +1,144 @@
+machine m2_modules
+refines m1_programmes
+sees c2_modules
+variables
+	registered
+	logged_in
+	programmes
+	programme_leader
+	administrators
+	modules
+	contains_module
+	module_leader
+	credits_awarded
+	published
+invariants
+	@inv21: modules ⊆ MODULE
+	@inv22: contains_module ∈ programmes ↔ modules
+	@inv23: module_leader ∈ modules → registered
+	@inv24: credits_awarded ∈ modules → credits
+events
+	event INITIALISATION extends INITIALISATION
+	then
+		@act21: modules ≔ ∅
+		@act22: contains_module ≔ ∅
+		@act23: module_leader ≔ ∅
+		@act24: credits_awarded ≔ ∅
+	end
+
+	event create_module
+	any
+		u
+		m
+		c
+	where
+		@grd1: u ∈ logged_in
+		@grd2: m ∈ MODULE
+		@grd3: c ∈ credits
+		@grd4: m ∉  modules
+	then
+		@act1: modules ≔ modules ∪ {m}
+		@act2: module_leader(m) ≔  u
+		@act3: credits_awarded(m) ≔ c
+	end
+
+	event delete_module
+	any
+		u
+		m
+	where
+		@grd1: u ∈ logged_in
+		@grd2: m ∈  modules
+		@grd3: module_leader(m) = u
+		@grd4: m ∉  ran(contains_module)
+	then
+		@act1: modules ≔ modules ∖ {m}
+		@act2: module_leader ≔  {m} ⩤ module_leader
+		@act3: credits_awarded ≔  {m} ⩤ credits_awarded
+	end
+
+	event assign_module
+	any
+		u
+		m
+		p
+	where
+		@grd1: u ∈ logged_in
+		@grd2: m ∈ modules
+		@grd3: p ∈ programmes
+		@grd4: u ∈ administrators[{p}]
+		@grd6: m ∉ contains_module[{p}]
+		@grd7: p ∉  published
+	then
+		@act1: contains_module ≔  contains_module ∪ {p↦m}
+	end
+
+	event unassign_module
+	any
+		u
+		m
+		p
+	where
+		@grd1: u ∈ logged_in
+		@grd2: m ∈ modules
+		@grd3: p ∈ programmes
+		@grd4: u ∈ administrators[{p}]
+		@grd5: m ∈ contains_module[{p}]
+		@grd6: p ∉  published
+	then
+		@act1: contains_module ≔  contains_module ∖ {p↦m}
+	end
+
+	event transfer_module_ownership
+	any
+		u1
+		u2
+		m
+	where
+		@grd1: u1 ∈ logged_in
+		@grd2: u2 ∈ registered
+		@grd3: m ∈ modules
+		@grd4: module_leader(m) = u1
+		@grd5: u1 ≠ u2
+	then
+		@act1: module_leader(m) ≔ u2
+	end
+
+	event publish_programme extends publish_programme
+	end
+
+	event unpublish_programme extends unpublish_programme
+	end
+
+	event create_programme extends create_programme
+	end
+
+	event delete_programme extends delete_programme
+	then
+		@act21: contains_module ≔ {p} ⩤ contains_module
+	end
+
+	event add_administrator extends add_administrator
+	end
+
+	event remove_administrator extends remove_administrator
+	end
+
+	event transfer_ownership extends transfer_ownership
+	end
+
+	event register extends register
+	end
+
+	event unregister extends unregister
+	where
+		@grd21: u ∉  ran(module_leader)
+	end
+
+	event login extends login
+	end
+
+	event logout extends logout
+	end
+
+end

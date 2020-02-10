@@ -1,0 +1,5 @@
+context c3_outcomes
+extends c2_modules
+sets
+	M_OUTCOME
+	P_OUTCOME end
