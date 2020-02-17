@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1581347641632" org.eventb.texttools.text_representation="context c2_modules extends c1_programmes&#10;&#10;sets MODULE&#10;&#10;constants credits&#10;&#10;axioms&#10;  @axm21 credits = {15, 30, 45, 60}&#10;end&#10;" version="3">
-<org.eventb.core.extendsContext name="_fuhrAEHSEeqHCPZ-G665YQ" org.eventb.core.target="c1_programmes"/>
-<org.eventb.core.carrierSet name="_fuiSEEHSEeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.identifier="MODULE"/>
-<org.eventb.core.constant name="_rGOvUEgCEeqeqbGZOOBkaQ" org.eventb.core.generated="false" org.eventb.core.identifier="credits"/>
-<org.eventb.core.axiom name="_rGOvUUgCEeqeqbGZOOBkaQ" org.eventb.core.generated="false" org.eventb.core.label="axm21" org.eventb.core.predicate="credits = {15, 30, 45, 60}"/>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1581588536777" org.eventb.texttools.text_representation="context c2_modules extends c1_programmes&#10;&#10;sets MODULE&#10;&#10;constants credits sum&#10;&#10;axioms&#10;  @axm21 credits = {15, 30, 45, 60}&#10;  @axm22 sum ∈ (MODULE ⇸ credits) → ℕ&#10;  @axm23 sum(∅) = 0&#10;  @sum24 ∀f, m · f ∈ MODULE ⇸ credits   ∧ m ∈ dom(f) ⇒  sum(f) = sum({m} ⩤ f) + f(m)&#10;end&#10;" version="3">
+    <org.eventb.core.extendsContext name="_fuhrAEHSEeqHCPZ-G665YQ" org.eventb.core.target="c1_programmes"/>
+    <org.eventb.core.carrierSet name="_fuiSEEHSEeqHCPZ-G665YQ" org.eventb.core.generated="false" org.eventb.core.identifier="MODULE"/>
+    <org.eventb.core.constant name="_rGOvUEgCEeqeqbGZOOBkaQ" org.eventb.core.generated="false" org.eventb.core.identifier="credits"/>
+    <org.eventb.core.axiom name="_rGOvUUgCEeqeqbGZOOBkaQ" org.eventb.core.generated="false" org.eventb.core.label="axm21" org.eventb.core.predicate="credits = {15, 30, 45, 60}"/>
+    <org.eventb.core.constant name="_Ut44ME5AEeqUxct8tLY9IA" org.eventb.core.generated="false" org.eventb.core.identifier="sum"/>
+    <org.eventb.core.axiom name="_Ut5fQE5AEeqUxct8tLY9IA" org.eventb.core.generated="false" org.eventb.core.label="axm22" org.eventb.core.predicate="sum ∈ (MODULE ⇸ credits) → ℕ"/>
+    <org.eventb.core.axiom name="_Ut5fQU5AEeqUxct8tLY9IA" org.eventb.core.generated="false" org.eventb.core.label="axm23" org.eventb.core.predicate="sum(∅) = 0"/>
+    <org.eventb.core.axiom name="_duc5wE5AEeqUxct8tLY9IA" org.eventb.core.generated="false" org.eventb.core.label="sum24" org.eventb.core.predicate="∀f, m · f ∈ MODULE ⇸ credits   ∧ m ∈ dom(f) ⇒  sum(f) = sum({m} ⩤ f) + f(m)"/>
 </org.eventb.core.contextFile>
