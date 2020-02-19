@@ -1,29 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
-    <org.eventb.core.psStatus name="INITIALISATION/inv61/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="INITIALISATION/inv62/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="INITIALISATION/inv63/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="set_core/inv61/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="set_core/inv62/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="set_core/inv63/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="set_optional/inv61/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="set_optional/inv62/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="set_optional/inv63/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="publish_programme/inv63/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="unpublish_programme/inv63/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="assign_prerequisite/inv63/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="unassign_prerequisite/inv63/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="create_module/inv61/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="create_module/inv63/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="delete_module/inv61/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="delete_module/inv62/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="delete_module/inv63/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="assign_module/inv62/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="unassign_module/inv61/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="unassign_module/inv62/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="unassign_module/inv63/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="create_programme/inv61/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="delete_programme/inv61/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="delete_programme/inv62/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="delete_programme/inv63/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="inv64/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="true"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv61/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv62/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv63/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv64/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="set_core/inv61/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="set_core/inv62/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="set_core/inv63/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="set_core/inv64/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="true"/>
+<org.eventb.core.psStatus name="set_optional/inv61/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="set_optional/inv62/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="set_optional/inv63/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="set_optional/inv64/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="true"/>
+<org.eventb.core.psStatus name="publish_programme/grd62/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="true"/>
+<org.eventb.core.psStatus name="publish_programme/inv63/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="publish_programme/inv64/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="unpublish_programme/inv63/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="unpublish_programme/inv64/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="change_semester/inv64/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="true"/>
+<org.eventb.core.psStatus name="change_year/inv64/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="true"/>
+<org.eventb.core.psStatus name="assign_prerequisite/inv63/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="unassign_prerequisite/inv63/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="create_module/inv61/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="create_module/inv63/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="create_module/inv64/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="true"/>
+<org.eventb.core.psStatus name="delete_module/inv61/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="delete_module/inv62/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="delete_module/inv63/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="delete_module/inv64/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="true"/>
+<org.eventb.core.psStatus name="assign_module/inv62/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="unassign_module/inv61/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="unassign_module/inv62/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="unassign_module/inv63/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="unassign_module/inv64/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="true"/>
+<org.eventb.core.psStatus name="create_programme/inv61/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="delete_programme/inv61/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="delete_programme/inv62/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="delete_programme/inv63/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="delete_programme/inv64/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="true"/>
 </org.eventb.core.psFile>
