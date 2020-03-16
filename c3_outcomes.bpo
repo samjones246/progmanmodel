@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="1">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="USER" org.eventb.core.type="ℙ(USER)"/>
 <org.eventb.core.poIdentifier name="PROGRAMME" org.eventb.core.type="ℙ(PROGRAMME)"/>
 <org.eventb.core.poIdentifier name="MODULE" org.eventb.core.type="ℙ(MODULE)"/>
@@ -13,5 +13,5 @@
 <org.eventb.core.poIdentifier name="M_OUTCOME" org.eventb.core.type="ℙ(M_OUTCOME)"/>
 <org.eventb.core.poIdentifier name="P_OUTCOME" org.eventb.core.type="ℙ(P_OUTCOME)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/progmanmodel/c3_outcomes.bpo|org.eventb.core.poFile#c3_outcomes|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/progmanmodel/c3_outcomes.bpo|org.eventb.core.poFile#c3_outcomes|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0"/>
 </org.eventb.core.poFile>

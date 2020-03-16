@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="1">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="USER" org.eventb.core.type="ℙ(USER)"/>
 <org.eventb.core.poIdentifier name="PROGRAMME" org.eventb.core.type="ℙ(PROGRAMME)"/>
 <org.eventb.core.poIdentifier name="MODULE" org.eventb.core.type="ℙ(MODULE)"/>
@@ -17,7 +17,7 @@
 <org.eventb.core.poIdentifier name="semester" org.eventb.core.type="ℙ(ℤ)"/>
 <org.eventb.core.poIdentifier name="year" org.eventb.core.type="ℙ(ℤ)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/progmanmodel/c5_semesters.bpo|org.eventb.core.poFile#c5_semesters|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/progmanmodel/c5_semesters.bpo|org.eventb.core.poFile#c5_semesters|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="semester={1,2}" org.eventb.core.source="/progmanmodel/c5_semesters.buc|org.eventb.core.contextFile#c5_semesters|org.eventb.core.axiom#_aP8HoEgCEeqeqbGZOOBkaQ"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="year={1,2,3,4}" org.eventb.core.source="/progmanmodel/c5_semesters.buc|org.eventb.core.contextFile#c5_semesters|org.eventb.core.axiom#_aP8HoUgCEeqeqbGZOOBkaQ"/>
 </org.eventb.core.poPredicateSet>

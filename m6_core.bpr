@@ -1700,24 +1700,44 @@
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="set_core/inv64/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="p0,s,y" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="MODULE,PROGRAMME">
+<org.eventb.core.prProof name="set_core/inv64/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="p0,s,y" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="MODULE,PROGRAMME" org.eventb.core.psManual="true">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
-<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
-<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p8"/>
 <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees p0,y,s)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
 <org.eventb.core.prIdent name="p0" org.eventb.core.type="PROGRAMME"/>
 <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
 <org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ"/>
-<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p9,p10,p11"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="p10,p11,p12">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ hyp (inst p0,y,s)" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p14" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prHyps="p15">
+<org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="p10,p11,p12" org.eventb.core.prInfHyps="p16"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prExprRef name=".exprs" org.eventb.core.prRef="e0,e1,e2"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
@@ -1735,44 +1755,73 @@
 <org.eventb.core.prIdent name="semester" org.eventb.core.type="ℙ(ℤ)"/>
 <org.eventb.core.prIdent name="sum" org.eventb.core.type="ℙ(ℙ(MODULE×ℤ)×ℤ)"/>
 <org.eventb.core.prIdent name="year" org.eventb.core.type="ℙ(ℤ)"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="registered⊆USER">
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="registered⊆USER">
 <org.eventb.core.prIdent name="USER" org.eventb.core.type="ℙ(USER)"/>
 <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(USER)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="m∉core[{p}]"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="s∈semester">
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="m∉core[{p}]"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="s∈semester">
 <org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="p0∈published">
-<org.eventb.core.prIdent name="p0" org.eventb.core.type="PROGRAMME"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="sum(((core∪{p ↦ m})[{p0}]∩module_year∼[{y}]∩module_semester∼[{s}]) ◁ credits_awarded)≤60">
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="sum((core[{p0}]∩module_year∼[{y}]∩module_semester∼[{s}]) ◁ credits_awarded)≤60">
 <org.eventb.core.prIdent name="p0" org.eventb.core.type="PROGRAMME"/>
 <org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ"/>
 <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="programmes⊆PROGRAMME">
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="p0∈published∧y∈year∧s∈semester⇒sum((core[{p0}]∩module_year∼[{y}]∩module_semester∼[{s}]) ◁ credits_awarded)≤60">
+<org.eventb.core.prIdent name="p0" org.eventb.core.type="PROGRAMME"/>
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="⊤∧⊤∧⊤⇒sum((core[{p0}]∩module_year∼[{y}]∩module_semester∼[{s}]) ◁ credits_awarded)≤60">
+<org.eventb.core.prIdent name="p0" org.eventb.core.type="PROGRAMME"/>
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="p0∈published">
+<org.eventb.core.prIdent name="p0" org.eventb.core.type="PROGRAMME"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="sum(((core∪{p ↦ m})[{p0}]∩module_year∼[{y}]∩module_semester∼[{s}]) ◁ credits_awarded)≤60">
+<org.eventb.core.prIdent name="p0" org.eventb.core.type="PROGRAMME"/>
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="programmes⊆PROGRAMME">
 <org.eventb.core.prIdent name="programmes" org.eventb.core.type="ℙ(PROGRAMME)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬p∈published"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="p0∈published∧y∈year∧s∈semester⇒sum(((core∪{p ↦ m})[{p0}]∩module_year∼[{y}]∩module_semester∼[{s}]) ◁ credits_awarded)≤60">
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬p∈published"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="p0∈published∧y∈year∧s∈semester⇒sum(((core∪{p ↦ m})[{p0}]∩module_year∼[{y}]∩module_semester∼[{s}]) ◁ credits_awarded)≤60">
 <org.eventb.core.prIdent name="p0" org.eventb.core.type="PROGRAMME"/>
 <org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ"/>
 <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
 </org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀p⦂PROGRAMME,y⦂ℤ,s⦂ℤ·p∈published∧y∈year∧s∈semester⇒sum((core[{p}]∩module_year∼[{y}]∩module_semester∼[{s}]) ◁ credits_awarded)≤60"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀p0⦂PROGRAMME,y⦂ℤ,s⦂ℤ·p0∈published∧y∈year∧s∈semester⇒sum(((core∪{p ↦ m})[{p0}]∩module_year∼[{y}]∩module_semester∼[{s}]) ◁ credits_awarded)≤60"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬m∈core[{p}]"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="p∉published"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="y∈year">
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬m∈core[{p}]"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p∉published"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="y∈year">
 <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="modules⊆MODULE">
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="modules⊆MODULE">
 <org.eventb.core.prIdent name="modules" org.eventb.core.type="ℙ(MODULE)"/>
 </org.eventb.core.prPred>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="p0">
+<org.eventb.core.prIdent name="p0" org.eventb.core.type="PROGRAMME"/>
+</org.eventb.core.prExpr>
+<org.eventb.core.prExpr name="e2" org.eventb.core.expression="s">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prExpr>
+<org.eventb.core.prExpr name="e1" org.eventb.core.expression="y">
+<org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prExpr>
 <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.allD"/>
+<org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="set_optional/inv64/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="p0,s,y" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="MODULE,PROGRAMME">
 <org.eventb.core.lang name="L"/>
@@ -1840,10 +1889,10 @@
 <org.eventb.core.prPred name="p5" org.eventb.core.predicate="modules⊆MODULE">
 <org.eventb.core.prIdent name="modules" org.eventb.core.type="ℙ(MODULE)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="publish_programme/inv64/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="p0,s,y" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9" org.eventb.core.prSets="MODULE,M_OUTCOME,PROGRAMME,P_OUTCOME,USER">
 <org.eventb.core.lang name="L"/>
@@ -2110,10 +2159,10 @@
 <org.eventb.core.prPred name="p9" org.eventb.core.predicate="p∈published">
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PROGRAMME"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="change_year/inv64/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="p,s,y0" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="MODULE,PROGRAMME">
 <org.eventb.core.lang name="L"/>
@@ -2188,10 +2237,10 @@
 <org.eventb.core.prPred name="p9" org.eventb.core.predicate="p∈published">
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PROGRAMME"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="create_module/inv64/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="p,y0,s0" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="MODULE,PROGRAMME">
 <org.eventb.core.lang name="L"/>
@@ -2267,10 +2316,10 @@
 <org.eventb.core.prPred name="p9" org.eventb.core.predicate="y0∈year">
 <org.eventb.core.prIdent name="y0" org.eventb.core.type="ℤ"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="delete_module/inv64/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="p,s,y" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="MODULE,PROGRAMME,USER">
 <org.eventb.core.lang name="L"/>
@@ -2357,10 +2406,10 @@
 <org.eventb.core.prPred name="p9" org.eventb.core.predicate="p∈published">
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PROGRAMME"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
 <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.he:1"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="unassign_module/inv64/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="p0,s,y" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="MODULE,PROGRAMME">
@@ -2429,10 +2478,10 @@
 <org.eventb.core.prPred name="p5" org.eventb.core.predicate="modules⊆MODULE">
 <org.eventb.core.prIdent name="modules" org.eventb.core.type="ℙ(MODULE)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="delete_programme/inv64/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="p0,s,y" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="MODULE,PROGRAMME,USER">
 <org.eventb.core.lang name="L"/>
@@ -2514,10 +2563,10 @@
 <org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ"/>
 <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
 <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.he:1"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="publish_programme/grd62/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="s,y,cm" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40" org.eventb.core.prSets="MODULE,M_OUTCOME,PROGRAMME,P_OUTCOME,USER" org.eventb.core.psManual="true">
