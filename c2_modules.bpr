@@ -20,16 +20,16 @@
 </org.eventb.core.prRule>
 <org.eventb.core.prIdent name="credits" org.eventb.core.type="ℙ(ℤ)"/>
 <org.eventb.core.prIdent name="sum" org.eventb.core.type="ℙ(ℙ(MODULE×ℤ)×ℤ)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="sum∈(MODULE ↔ {15,30,45,60}) → ℕ"/>
 <org.eventb.core.prPred name="p3" org.eventb.core.predicate="(∅ ⦂ ℙ(MODULE×ℤ))∈dom(sum)"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="sum∈(MODULE ⇸ {15,30,45,60}) → ℕ"/>
 <org.eventb.core.prPred name="p5" org.eventb.core.predicate="sum∈ℙ(MODULE × ℤ) ⇸ ℤ"/>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="credits={15,30,45,60}"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="sum∈(MODULE ⇸ credits) → ℕ"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(MODULE×ℤ))∈dom(sum)∧sum∈ℙ(MODULE × ℤ) ⇸ ℤ"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="sum∈(MODULE ↔ credits) → ℕ"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
 <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
 <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="sum24/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="f,m" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="MODULE">
 <org.eventb.core.lang name="L"/>
@@ -47,15 +47,11 @@
 <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12">
 <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with credits={15,30,45,60}" org.eventb.core.prHyps="p3">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p13"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p13"/>
 <org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p14"/>
-<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p4,p9"/>
-<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p4">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
-<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="p9"/>
-</org.eventb.core.prAnte>
-<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
-<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p5,p9"/>
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p3,p5,p4,p1,p2,p9,p10,p13,p14">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
@@ -63,17 +59,17 @@
 <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p15">
 <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with credits={15,30,45,60}" org.eventb.core.prHyps="p3">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p13"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p13"/>
 <org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p14"/>
-<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p4,p9"/>
-<org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="p3,p4,p5,p1,p2,p9,p10,p13,p14">
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p5,p9"/>
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="p3,p5,p4,p1,p2,p9,p10,p13,p14">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 <org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p16">
-<org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p16" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p16" org.eventb.core.prHyps="p9"/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -104,35 +100,32 @@
 <org.eventb.core.prIdent name="m" org.eventb.core.type="MODULE"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀f⦂ℙ(MODULE×ℤ),m⦂MODULE·f∈MODULE ⇸ credits∧m∈dom(f)⇒f∈dom(sum)∧⊤∧{m} ⩤ f∈dom(sum)∧f∈MODULE ⇸ ℤ"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="sum∈(MODULE ↔ {15,30,45,60}) → ℕ"/>
 <org.eventb.core.prPred name="p10" org.eventb.core.predicate="m∈dom(f)">
 <org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(MODULE×ℤ)"/>
 <org.eventb.core.prIdent name="m" org.eventb.core.type="MODULE"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="sum∈(MODULE ⇸ {15,30,45,60}) → ℕ"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀f⦂ℙ(MODULE×ℤ),m⦂MODULE·f∈MODULE ⇸ credits∧m∈dom(f)⇒f∈dom(sum)∧sum∈ℙ(MODULE × ℤ) ⇸ ℤ∧{m} ⩤ f∈dom(sum)∧f∈MODULE ⇸ ℤ"/>
 <org.eventb.core.prPred name="p3" org.eventb.core.predicate="credits={15,30,45,60}"/>
 <org.eventb.core.prPred name="p16" org.eventb.core.predicate="f∈MODULE ⇸ ℤ">
 <org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(MODULE×ℤ)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="sum∈(MODULE ⇸ credits) → ℕ"/>
 <org.eventb.core.prPred name="p14" org.eventb.core.predicate="f∈MODULE ⇸ {15,30,45,60}">
 <org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(MODULE×ℤ)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="sum(∅ ⦂ ℙ(MODULE×ℤ))=0"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="sum(∅ ⦂ ℙ(MODULE×ℤ))=0"/>
 <org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀f⦂ℙ(MODULE×ℤ),m⦂MODULE·f∈MODULE ⇸ credits∧m∈dom(f)⇒f∈dom(sum)∧{m} ⩤ f∈dom(sum)∧f∈MODULE ⇸ ℤ"/>
 <org.eventb.core.prPred name="p12" org.eventb.core.predicate="f∈dom(sum)">
 <org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(MODULE×ℤ)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prExpr name="e0" org.eventb.core.expression="MODULE ⇸ credits"/>
-<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
-<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
-<org.eventb.core.prReas name="r9" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="sum∈(MODULE ↔ credits) → ℕ"/>
 <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
-<org.eventb.core.prReas name="r8" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+<org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
 <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
-<org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r6" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
-<org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
 </org.eventb.core.prProof>
 </org.eventb.core.prFile>

@@ -2164,24 +2164,31 @@
 <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
 <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="change_year/inv64/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="p,s,y0" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="MODULE,PROGRAMME">
+<org.eventb.core.prProof name="change_year/inv64/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="p,s,y0" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="MODULE,PROGRAMME,USER">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
-<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
-<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p8"/>
 <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees p,y0,s)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PROGRAMME"/>
 <org.eventb.core.prIdent name="y0" org.eventb.core.type="ℤ"/>
 <org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ"/>
-<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p9,p10,p11"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="p10,p11,p12">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with u=module_leader(m)" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p14" org.eventb.core.prInfHyps="p15"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p14"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
@@ -2192,55 +2199,64 @@
 <org.eventb.core.prIdent name="core" org.eventb.core.type="ℙ(PROGRAMME×MODULE)"/>
 <org.eventb.core.prIdent name="credits_awarded" org.eventb.core.type="ℙ(MODULE×ℤ)"/>
 <org.eventb.core.prIdent name="m" org.eventb.core.type="MODULE"/>
+<org.eventb.core.prIdent name="module_leader" org.eventb.core.type="ℙ(MODULE×USER)"/>
 <org.eventb.core.prIdent name="module_semester" org.eventb.core.type="ℙ(MODULE×ℤ)"/>
 <org.eventb.core.prIdent name="module_year" org.eventb.core.type="ℙ(MODULE×ℤ)"/>
 <org.eventb.core.prIdent name="published" org.eventb.core.type="ℙ(PROGRAMME)"/>
 <org.eventb.core.prIdent name="semester" org.eventb.core.type="ℙ(ℤ)"/>
 <org.eventb.core.prIdent name="sum" org.eventb.core.type="ℙ(ℙ(MODULE×ℤ)×ℤ)"/>
+<org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
 <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
 <org.eventb.core.prIdent name="year" org.eventb.core.type="ℙ(ℤ)"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="registered⊆USER">
-<org.eventb.core.prIdent name="USER" org.eventb.core.type="ℙ(USER)"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="registered⊆USER">
 <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(USER)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="s∈semester">
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="s∈semester">
 <org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="sum((core[{p}]∩(module_year{m ↦ y})∼[{y0}]∩module_semester∼[{s}]) ◁ credits_awarded)≤60">
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="u=module_leader(m)"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="sum((core[{p}]∩(module_year{m ↦ y})∼[{y0}]∩module_semester∼[{s}]) ◁ credits_awarded)≤60">
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PROGRAMME"/>
 <org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ"/>
 <org.eventb.core.prIdent name="y0" org.eventb.core.type="ℤ"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="programmes⊆PROGRAMME">
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="module_leader(m)∈logged_in">
+<org.eventb.core.prIdent name="logged_in" org.eventb.core.type="ℙ(USER)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="programmes⊆PROGRAMME">
 <org.eventb.core.prIdent name="programmes" org.eventb.core.type="ℙ(PROGRAMME)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="module_year(m)≠y"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="y0∈year">
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="module_year(m)≠y"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="y0∈year">
 <org.eventb.core.prIdent name="y0" org.eventb.core.type="ℤ"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬module_year(m)=y"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="m∉contains_module[published]">
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬module_year(m)=y"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="u∈logged_in">
+<org.eventb.core.prIdent name="logged_in" org.eventb.core.type="ℙ(USER)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="m∉contains_module[published]">
 <org.eventb.core.prIdent name="contains_module" org.eventb.core.type="ℙ(PROGRAMME×MODULE)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬m∈contains_module[published]">
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬m∈contains_module[published]">
 <org.eventb.core.prIdent name="contains_module" org.eventb.core.type="ℙ(PROGRAMME×MODULE)"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀p⦂PROGRAMME,y0⦂ℤ,s⦂ℤ·p∈published∧y0∈year∧s∈semester⇒sum((core[{p}]∩(module_year{m ↦ y})∼[{y0}]∩module_semester∼[{s}]) ◁ credits_awarded)≤60"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="modules⊆MODULE">
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="modules⊆MODULE">
 <org.eventb.core.prIdent name="modules" org.eventb.core.type="ℙ(MODULE)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="p∈published∧y0∈year∧s∈semester⇒sum((core[{p}]∩(module_year{m ↦ y})∼[{y0}]∩module_semester∼[{s}]) ◁ credits_awarded)≤60">
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="p∈published∧y0∈year∧s∈semester⇒sum((core[{p}]∩(module_year{m ↦ y})∼[{y0}]∩module_semester∼[{s}]) ◁ credits_awarded)≤60">
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PROGRAMME"/>
 <org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ"/>
 <org.eventb.core.prIdent name="y0" org.eventb.core.type="ℤ"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="p∈published">
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="p∈published">
 <org.eventb.core.prIdent name="p" org.eventb.core.type="PROGRAMME"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
 <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="create_module/inv64/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="p,y0,s0" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="MODULE,PROGRAMME">
 <org.eventb.core.lang name="L"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="2">
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="USER" org.eventb.core.type="ℙ(USER)"/>
 <org.eventb.core.poIdentifier name="PROGRAMME" org.eventb.core.type="ℙ(PROGRAMME)"/>
@@ -264,7 +264,7 @@
 <org.eventb.core.poIdentifier name="outcome_mapping'" org.eventb.core.type="ℙ(MODULE×M_OUTCOME×(PROGRAMME×P_OUTCOME))"/>
 <org.eventb.core.poIdentifier name="m" org.eventb.core.type="MODULE"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_outcome}" org.eventb.core.parentSet="/progmanmodel/m4_prerequisites.bpo|org.eventb.core.poFile#m4_prerequisites|org.eventb.core.poPredicateSet#EVTIDENTprogramme_outcome}" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_outcome}" org.eventb.core.parentSet="/progmanmodel/m4_prerequisites.bpo|org.eventb.core.poFile#m4_prerequisites|org.eventb.core.poPredicateSet#EVTIDENTprogramme_outcome}" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u∈logged_in" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOrvoEHWEeqHCPZ-G665YQ|org.eventb.core.guard#_t9rBQEgoEeqeqbGZOOBkaQ"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="p∈programmes" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOrvoEHWEeqHCPZ-G665YQ|org.eventb.core.guard#_t9roUEgoEeqeqbGZOOBkaQ"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="po∈P_OUTCOME" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOrvoEHWEeqHCPZ-G665YQ|org.eventb.core.guard#_t9roUUgoEeqeqbGZOOBkaQ"/>
@@ -284,7 +284,7 @@
 <org.eventb.core.poIdentifier name="outcome_mapping'" org.eventb.core.type="ℙ(MODULE×M_OUTCOME×(PROGRAMME×P_OUTCOME))"/>
 <org.eventb.core.poIdentifier name="m" org.eventb.core.type="MODULE"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_outcome~" org.eventb.core.parentSet="/progmanmodel/m4_prerequisites.bpo|org.eventb.core.poFile#m4_prerequisites|org.eventb.core.poPredicateSet#EVTIDENTprogramme_outcome~" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="EVTALLHYPprogramme_outcome~" org.eventb.core.parentSet="/progmanmodel/m4_prerequisites.bpo|org.eventb.core.poFile#m4_prerequisites|org.eventb.core.poPredicateSet#EVTIDENTprogramme_outcome~" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u∈logged_in" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOrvoUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_wKL8IEgoEeqeqbGZOOBkaQ"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="p∈programmes" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOrvoUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_wKL8IUgoEeqeqbGZOOBkaQ"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="po∈P_OUTCOME" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOrvoUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_wKL8IkgoEeqeqbGZOOBkaQ"/>
