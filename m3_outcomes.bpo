@@ -280,6 +280,7 @@
 <org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="po∈programme_outcomes[{p}]" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOrvoEHWEeqHCPZ-G665YQ|org.eventb.core.guard#_KEDFskmgEeqDwOH5c8gGmw"/>
 <org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="mo∈module_outcomes[{m}]" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOrvoEHWEeqHCPZ-G665YQ|org.eventb.core.guard#_k8uYUEmgEeqDwOH5c8gGmw"/>
 <org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="m ↦ mo ↦ (p ↦ po)∉outcome_mapping" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOrvoEHWEeqHCPZ-G665YQ|org.eventb.core.guard#_Wj4i4GeOEeqknqZz0CExqw"/>
+<org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="p∉published" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOrvoEHWEeqHCPZ-G665YQ|org.eventb.core.guard#_hHHgsGkFEeqIPJEEodEg6Q"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poSequent name="unmap_outcome/inv33/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/progmanmodel/m3_outcomes.bpo|org.eventb.core.poFile#m3_outcomes|org.eventb.core.poPredicateSet#EVTALLHYPprogramme_outcomez"/>
@@ -316,6 +317,7 @@
 <org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="po∈programme_outcomes[{p}]" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOrvoUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_aUdZIkmgEeqDwOH5c8gGmw"/>
 <org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="mo∈module_outcomes[{m}]" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOrvoUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_l__zMEmgEeqDwOH5c8gGmw"/>
 <org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="m ↦ mo ↦ (p ↦ po)∈outcome_mapping" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOrvoUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_FPt28GePEeqknqZz0CExqw"/>
+<org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="p∉published" org.eventb.core.source="/progmanmodel/m3_outcomes.bum|org.eventb.core.machineFile#m3_outcomes|org.eventb.core.event#_WOrvoUHWEeqHCPZ-G665YQ|org.eventb.core.guard#_j08Y4GkFEeqIPJEEodEg6Q"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poPredicateSet name="EVTIDENTprogramme_outcome{" org.eventb.core.parentSet="/progmanmodel/m3_outcomes.bpo|org.eventb.core.poFile#m3_outcomes|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="u" org.eventb.core.type="USER"/>
